@@ -3,7 +3,7 @@
 **Function**
 
 - [x] Login （GameCenter & Facebook & Guest）
-- [x] Share （Facebook & Messenger & WhatsApp） 
+- [x] Share （Facebook & WhatsApp） 
 - [x] In-App Purchase
 - [x] Push Notifications
 - [x] Universal Link
