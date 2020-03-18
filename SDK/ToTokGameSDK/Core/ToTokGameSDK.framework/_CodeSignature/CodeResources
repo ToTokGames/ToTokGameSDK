@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TTGCConfig.h</key>
 		<data>
-		kSuFiZ9Vaf5OSGY10YaIhr8wJ2Y=
+		a3A3PUFvqzlFaa9qI7c2t57UrlE=
 		</data>
 		<key>Headers/TTGCFriendModel.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
-		jeAoWZPfbbY+KRAWoRDG3lGSAUo=
+		uuEdXTrHM5K8EgyXECYApgzm5FM=
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		4RYkv9HmlazcWxyDftbEWDumNZ4=
+		Ux9bgGJjQDyZllPl1/HvDEHbffI=
 		</data>
 		<key>Headers/ToTokGameManager.h</key>
 		<data>
-		JWv5Dopdmfd67b9GwWE9tRdOEvA=
+		Mde3o3K0aBy/67s3fBr/FiadgfQ=
 		</data>
 		<key>Headers/ToTokGameSDK.h</key>
 		<data>
@@ -67,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kSuFiZ9Vaf5OSGY10YaIhr8wJ2Y=
+			a3A3PUFvqzlFaa9qI7c2t57UrlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			TFQhVWe40/t7AhsMZ/8KA1vY6/o/Eur6Au652Vp5ClY=
+			N1diuU8Ya0ApdNCyka2cbFGfxFMzSaf7202IVsP5fjI=
 			</data>
 		</dict>
 		<key>Headers/TTGCFriendModel.h</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jeAoWZPfbbY+KRAWoRDG3lGSAUo=
+			uuEdXTrHM5K8EgyXECYApgzm5FM=
 			</data>
 			<key>hash2</key>
 			<data>
-			68pSyFwyKT8Q0mslQrSpbpEd/gYdV7FXF8SEKwbMUGU=
+			I8RPUdUlmp6Ag+r79cP3YV3nX0wJtmeBEjoleVTde9E=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
@@ -166,22 +166,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4RYkv9HmlazcWxyDftbEWDumNZ4=
+			Ux9bgGJjQDyZllPl1/HvDEHbffI=
 			</data>
 			<key>hash2</key>
 			<data>
-			zykt9saMN/TqpdOka9uZrqJReVDq5vVoDa0+YWAiJ90=
+			IVWjy7EZ2dUS29sWW1CsiB68NR8TYrMQhoMDEX6RHnw=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JWv5Dopdmfd67b9GwWE9tRdOEvA=
+			Mde3o3K0aBy/67s3fBr/FiadgfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			sXOeu6CW5x1a7BViRn51m1QAcj93sl8ERCM2luVsSPE=
+			L4asTz2cw2DMhGk+MecCKLk1uZc8LPmevDCvvJ3xkUU=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameSDK.h</key>

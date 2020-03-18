@@ -39,7 +39,7 @@ typedef void (^TTGCLaunchCompletion)(BOOL isFinish);
  *  @param actionType 表示操作类型
  *
  */
-typedef void (^TTGCLoginAction)(TTGCUserType actionType);
+typedef void (^TTGCLoginAction)(TTGCLoginType actionType);
 
 /**
  *  登录操作的回调

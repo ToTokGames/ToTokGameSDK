@@ -19,16 +19,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
 初始化
 */
-- (void)setupWithAppId:(NSString *)appid Secret:(NSString *)secret Application:(UIApplication *)application Options:(NSDictionary *)launchOptions AnimationHandle:(TTGCLaunchCompletion)handle;
+- (void)setupWithAppId:(NSString *)appid Secret:(NSString *)secret GameId:(NSString *)gameid Application:(UIApplication *)application Options:(NSDictionary *)launchOptions AnimationHandle:(TTGCLaunchCompletion)handle;
+
+- (void)applicationDidEnterBackground:(UIApplication *)application;
+- (void)applicationWillEnterForeground:(UIApplication *)application;
+- (void)applicationDidBecomeActive:(UIApplication *)application;
+- (void)applicationWillTerminate:(UIApplication *)application;
 
 #pragma mark - 登录
 
 /**
-登录状态
-YES：表示已经登录
- NO：没有登录
+登录用户类型
 */
-- (BOOL)isLogin;
+- (TTGCLoginType)loginType;
 
 /**
 ToTok登录
@@ -81,33 +84,20 @@ Facebook登录
 #pragma mark - 分享
 
 /**
- 分享到ToTok方法 固定模板link类型内容
-
- @param ttkUid 分享到好友的totok 用户id或者群组id
- @param templateId 消息模板id
- @param img 消息icon
- @param title 标题
- @param des 描述
- @param buttonTitle 点击动作名称
- @param link 消息链接
- @param completion 分享回调
- */
-- (void)shareTottkUid:(NSString *)ttkUid
-           TemplateId:(NSString *)templateId
-                Image:(NSString *)img
-                Title:(NSString *)title
-          Description:(NSString *)des
-          ButtonTitle:(NSString *)buttonTitle
-                 Link:(NSString *)link
-           Completion:(TTGCShareCompleteHandler)completion;
-
-/**
- *  三方平台分享
+ *  FB分享
  *
- *  @param messageObject  分享的content @see TTGCSocialMessageObject
+ *  @param messageObject  share content type @see TTGCSocialFBLink TTGCSocialFBImages
  *  @param completion   回调
  */
-- (void)shareMessageObject:(TTGCSocialMessageObject *)messageObject completion:(TTGCShareCompleteHandler)completion;
+- (void)facebookShareMessage:(id)messageObject completion:(TTGCShareCompleteHandler)completion;
+
+/**
+ *  WhatsApp分享
+ *
+ *  @param messageObject  share content type @see TTGCSocialWALink TTGCSocialWAImages
+ *  @param completion   回调
+ */
+- (void)whatsAppShareMessage:(id)messageObject completion:(TTGCShareCompleteHandler)completion;
 
 /**
  *  调用系统相册
@@ -160,7 +150,7 @@ Facebook登录
 /**
 打开系统通知设置
 */
-- (void)SystemNotificationSetting;
+- (void)systemNotificationSetting;
 
 #pragma mark - ToTok消息
 
@@ -178,26 +168,6 @@ Facebook登录
 */
 - (void)getFriendsCompletion:(TTGCToTokFriendsCompletionHandler)completion;
 
-/**
- 指定ToTok好友发送模板消息
-
- @param ttkUid 分享到好友的totok 用户id或者群组id
- @param templateId 消息模板id
- @param imgUrl 图片url
- @param title 标题
- @param des 描述
- @param buttonTitle 点击动作名称
- @param link 消息链接
- @param completion 分享回调
- */
-- (void)sendToTokMessageTottkUid:(NSString *)ttkUid
-                      TemplateId:(NSString *)templateId
-                        ImageUrl:(NSString *)imgUrl
-                           Title:(NSString *)title
-                     Description:(NSString *)des
-                     ButtonTitle:(NSString *)buttonTitle
-                            Link:(NSString *)link
-                      Completion:(TTGCShareCompleteHandler)completion;
 
 #pragma mark - 支付
 
@@ -210,21 +180,31 @@ Facebook登录
 */
 - (void)buyProductWithSKU:(NSString *)sku Progress:(TTGCOrderProgressHandler)progress Completion:(TTGCOrderCompletionHandler)completion;
 
-#pragma mark - 配置信息
-- (void)loadConfig:(TTGCCompletionHandler _Nullable)handler;
-- (void)openAgreement;
-- (void)openPrivacy;
-- (void)openHomepage;
+/**
+查询订单
+ 
+@param orderID 订单id
+@param completion 查询结果 回调返回订单信息
+*/
+- (void)queryOrderWithOrderId:(NSString *)orderID Completion:(TTGCOrderCompletionHandler)completion;
 
-#pragma mark - Universal Link
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+#pragma mark - 配置信息
 
 /**
-获取UniversalLink
- 
-@param handler 回调 URL
+获取用户协议url
 */
-- (void)handleUniversalLink:(TTGCUniversalLinkHandler)handler;
+- (NSString *)getAgreementUrlString;
+
+/**
+获取隐私协议url
+*/
+- (NSString *)getPrivacyUrlString;
+
+/**
+获取主页url
+*/
+- (NSString *)getHomepageUrlString;
+
 
 #pragma mark - SDK 配置
 

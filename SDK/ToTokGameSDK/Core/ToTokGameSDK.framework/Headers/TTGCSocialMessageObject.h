@@ -14,8 +14,12 @@
  */
 typedef NS_ENUM(NSInteger, TTGCSocialPlateType) {
     TTGCSocialPlate_Facebook       = 1,             // Facebook
-    TTGCSocialPlate_Messenger      = 2,             // Messenger
-    TTGCSocialPlate_WhatsApp       = 3,             // WhatsApp
+    TTGCSocialPlate_WhatsApp       = 2,             // WhatsApp
+    
+    //以下内容暂未开放
+    TTGCSocialPlate_Messenger      = 3,             // Messenger
+    TTGCSocialPlate_ToTokApp       = 4,             // ToTokApp
+    TTGCSocialPlate_ToTokApi       = 5              // ToTokApi
 };
 
 /**
@@ -24,31 +28,54 @@ typedef NS_ENUM(NSInteger, TTGCSocialPlateType) {
 typedef NS_ENUM(NSInteger, TTGCShareContentType) {
     TTGCShareContent_Link          = 1,             // 链接
     TTGCShareContent_Photo         = 2,             // 图片
+    
+    //以下内容暂未开放
     TTGCShareContent_Video         = 3,             // 视频
     TTGCShareContent_Media         = 4,             // 多媒体
 };
 
+/**
+ *  分享自定义模板
+ */
+typedef NS_ENUM(NSInteger, TTGCShareTemplate) {
+    TTGCShareTemplate_Default        = 1,             // 默认为游戏详情link
+    TTGCShareTemplate_Invite         = 2,             // 邀请
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
+//TTGCSocialMessageObject模型暂时为内部使用，接入人员无需关注
 @interface TTGCSocialMessageObject : NSObject
 
-@property (nonatomic) TTGCSocialPlateType plateType; //社交平台类型
+/**
+ 社交平台类型
+ 分享必传字段
+*/
+@property (nonatomic) TTGCSocialPlateType plateType;
 
 /**
  分享内容类型
- facebook 需要设置
- messenger、whatsApp 暂时不需要设置
+ 分享必传字段
 */
 @property (nonatomic) TTGCShareContentType contentType;
 
 /**
- link URL
- 支持类型
- facebook
- messenger: (UIImage、NSURL)
- whatsApp: (UIImage、NSURL)
+ 分享自定义模板
+ 当分享内容类型为 TTGCShareContent_Link 为必传字段
 */
-@property (nonatomic, copy) NSURL *contentURL;
+@property (nonatomic) TTGCShareTemplate shareTemplate;
+
+/**
+ link URL
+ 目前link内容由SDK根据 shareTemplate 定义，开发人员无需传入。
+*/
+@property (nonatomic, copy, nullable) NSURL *contentURL;
+
+/**
+ Some quote text of the link.（Facebook）
+If specified, the quote text will render with custom styling on top of the link.
+*/
+@property (nonatomic, copy, nullable) NSString *quote;
 
 /**
  分享图片数组
@@ -84,7 +111,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSURL *videoURL;
 
 /**
- 文字
+ 分享文字描述
  支持类型
  whatsApp: (NSString)
 */
@@ -92,5 +119,38 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
+
+/************************* Facebook ******************************/
+
+// FacebookInvite模型
+@interface TTGCSocialFBInvite : NSObject
+
+@property (nonatomic, copy, nullable) NSString *quote; // Some quote text of the link
+
+@end
+
+// Facebook图片模型
+@interface TTGCSocialFBImages : NSObject
+
+@property (nonatomic, copy) NSArray *photos; // 分享图片数组（NSData、PHAsset、NSURL）
+
+@end
+
+/************************* WhatsApp ******************************/
+
+// WhatsApp链接模型
+@interface TTGCSocialWAInvite : NSObject
+
+@property (nonatomic, copy) NSString *contentString; // 分享文字描述
+
+@end
+
+// WhatsApp图片模型
+@interface TTGCSocialWAImages : NSObject
+
+@property (nonatomic, copy) NSArray *photos; // 分享图片数组（NSData、PHAsset、NSURL）
+
+@end
+
 
 NS_ASSUME_NONNULL_END
