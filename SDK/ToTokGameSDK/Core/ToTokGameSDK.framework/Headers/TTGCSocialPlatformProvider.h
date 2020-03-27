@@ -78,6 +78,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 //通用（备用）
 - (BOOL)ttgcSocial_handleOpenURL:(NSURL *)url options:(NSDictionary*)options;
+
+#pragma mark - Universal Link
+- (BOOL)ttgc_application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+
 /**
  *  平台是否安装
  *

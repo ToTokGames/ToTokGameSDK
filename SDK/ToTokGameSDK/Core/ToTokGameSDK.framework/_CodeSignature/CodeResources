@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/TTGCAppVersionModel.h</key>
+		<data>
+		t76p6hxMWtxY4DHTmAEKfMtJKNY=
+		</data>
 		<key>Headers/TTGCConfig.h</key>
 		<data>
-		a3A3PUFvqzlFaa9qI7c2t57UrlE=
+		em+3PUFUc51k4oF8/FXhgUituxA=
 		</data>
 		<key>Headers/TTGCFriendModel.h</key>
 		<data>
-		k8s69EsxUJi8A5aFz/zcjjGJZbQ=
+		T7HM2BhTIXkYXWLNJ+YhMTLDG3U=
 		</data>
 		<key>Headers/TTGCMessageModel.h</key>
 		<data>
@@ -18,7 +22,7 @@
 		</data>
 		<key>Headers/TTGCOrderModel.h</key>
 		<data>
-		g7XHsF7ebmSCxXzo4VCxfFNN+vQ=
+		uREBBLJe9z+vHVQGMwZ4nbxj51s=
 		</data>
 		<key>Headers/TTGCProgressHUD.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/TTGCProgressHUDDefine.h</key>
 		<data>
-		yx2jIhAmMpIAW12mM6juzdqHaqM=
+		I3llNGSKmUZpGkjNn0BwF1TQkPo=
 		</data>
 		<key>Headers/TTGCSocialHandler.h</key>
 		<data>
@@ -34,19 +38,19 @@
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
-		uuEdXTrHM5K8EgyXECYApgzm5FM=
+		+s3EOS81oqMvsSCE+7R7tMb4xlA=
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
-		05pSJ3SFkCY+UO/ulGObdtKG5BI=
+		5hSnAV+wpNfEg166wuhQqnjuoY8=
 		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		Ux9bgGJjQDyZllPl1/HvDEHbffI=
+		0oEFA18aeJbWccL+jJySZgFlANg=
 		</data>
 		<key>Headers/ToTokGameManager.h</key>
 		<data>
-		Mde3o3K0aBy/67s3fBr/FiadgfQ=
+		49GEjzLvdOIhbXD90dxMJWXLvyQ=
 		</data>
 		<key>Headers/ToTokGameSDK.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CueQBm5joJshZfCT86ntjNw/yl0=
+		qa+4Vj7aqew9exdJzT9BnlJVyYc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,26 +67,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/TTGCAppVersionModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t76p6hxMWtxY4DHTmAEKfMtJKNY=
+			</data>
+			<key>hash2</key>
+			<data>
+			0L1rBaIk6WBMabp5+IDnPZSbT3KiE9mjDoa+XZCY9u8=
+			</data>
+		</dict>
 		<key>Headers/TTGCConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a3A3PUFvqzlFaa9qI7c2t57UrlE=
+			em+3PUFUc51k4oF8/FXhgUituxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			N1diuU8Ya0ApdNCyka2cbFGfxFMzSaf7202IVsP5fjI=
+			Rzvyb/GM/teOsVRDJ/alLR8s1V/sdkAyU1Zfy+6mCmE=
 			</data>
 		</dict>
 		<key>Headers/TTGCFriendModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k8s69EsxUJi8A5aFz/zcjjGJZbQ=
+			T7HM2BhTIXkYXWLNJ+YhMTLDG3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			NLzRpTNeb+Lt3DZS4vXfGPF6D02YQcAnRYzXPDybGiU=
+			JX2DRDvuohKicfZcbcP831AgVql/1xYlKUM88+voSV8=
 			</data>
 		</dict>
 		<key>Headers/TTGCMessageModel.h</key>
@@ -100,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g7XHsF7ebmSCxXzo4VCxfFNN+vQ=
+			uREBBLJe9z+vHVQGMwZ4nbxj51s=
 			</data>
 			<key>hash2</key>
 			<data>
-			rZMFItmG1wTyduw5JP9vMsKwc+pl0W/X18dSmszeplU=
+			8xNH68sMPkshGTK+59YkAwOpaY+LiBe+5YTeodE9EcA=
 			</data>
 		</dict>
 		<key>Headers/TTGCProgressHUD.h</key>
@@ -122,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yx2jIhAmMpIAW12mM6juzdqHaqM=
+			I3llNGSKmUZpGkjNn0BwF1TQkPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			huuIVnoIMHhazUB4N5NgbwRbceqNKoV9FTlJZzxna4Q=
+			ujiy8qbtqHviPh367sb557rJ3YOsSTyLIrSqWSARiw0=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialHandler.h</key>
@@ -144,44 +159,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uuEdXTrHM5K8EgyXECYApgzm5FM=
+			+s3EOS81oqMvsSCE+7R7tMb4xlA=
 			</data>
 			<key>hash2</key>
 			<data>
-			I8RPUdUlmp6Ag+r79cP3YV3nX0wJtmeBEjoleVTde9E=
+			POg2LGfoVAzU5caIUDubu21zcr4D2R3hQnVftNYV/ts=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			05pSJ3SFkCY+UO/ulGObdtKG5BI=
+			5hSnAV+wpNfEg166wuhQqnjuoY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rj1DKluu9q4LZEegBmVQiDqv/5wkPHJQOiTFU+DGeNw=
+			ZKR9tSTdZ9mQd+BcVzcQrNhnslI38Kxe1RZ2Y+TwNg8=
 			</data>
 		</dict>
 		<key>Headers/TTGCUserModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ux9bgGJjQDyZllPl1/HvDEHbffI=
+			0oEFA18aeJbWccL+jJySZgFlANg=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVWjy7EZ2dUS29sWW1CsiB68NR8TYrMQhoMDEX6RHnw=
+			0XYYdc/UWqADU+78gBljTFYIjSNbqWXrnJhf4EbWi+I=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mde3o3K0aBy/67s3fBr/FiadgfQ=
+			49GEjzLvdOIhbXD90dxMJWXLvyQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			L4asTz2cw2DMhGk+MecCKLk1uZc8LPmevDCvvJ3xkUU=
+			FGIhpnqmLOmJ6p8I2dflezCid0gWPPidoVkDYvdcyYA=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameSDK.h</key>

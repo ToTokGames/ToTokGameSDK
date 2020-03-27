@@ -11,175 +11,189 @@
 #import "TTGCFriendModel.h"
 #import "TTGCOrderModel.h"
 #import "TTGCSocialMessageObject.h"
+#import "TTGCAppVersionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- *  支付过程回调状态
+ *  pay progress status enum
  */
 typedef NS_ENUM(NSInteger, TTGCOderStatus) {
-    TTGCOrderStatus_ProductQuerying          = 1, //查询商品中
-    TTGCOrderStatus_Generating               = 2, //订单生成中
-    TTGCOrderStatus_ProductPurchasing        = 3, //正在交易
-    TTGCOrderStatus_ProductPurchased         = 4, //交易成功
-    TTGCOrderStatus_ReceiptChecking          = 5, //订单校验中
+    TTGCOrderStatus_ProductQuerying          = 1, // order querying
+    TTGCOrderStatus_Generating               = 2, // order init
+    TTGCOrderStatus_ProductPurchasing        = 3, // order in trading progress
+    TTGCOrderStatus_ProductPurchased         = 4, // order purchased
+    TTGCOrderStatus_ReceiptChecking          = 5, // order verifying
 };
 
+
+
 /**
- *  启动动画完成回调
+ *  The launch animation finished callback
  *
- *  @param isFinish 动画完成
+ *  @param isFinish the animation finished
  *
  */
 typedef void (^TTGCLaunchCompletion)(BOOL isFinish);
 
 /**
- *  登录操作
+ *  Login action
  *
- *  @param actionType 表示操作类型
+ *  @param actionType the action type
  *
  */
 typedef void (^TTGCLoginAction)(TTGCLoginType actionType);
 
 /**
- *  登录操作的回调
+ *  Login callback
  *
- *  @param userInfo 表示用户信息 类型<TTGCUserModel>
- *  @param error  表示回调的错误信息
+ *  @param userInfo user detail information. model class <TTGCUserModel>
+ *  @param error error message
  */
 typedef void (^TTGCUserCompletionHandler)(id _Nullable userInfo, NSError *_Nullable error);
 
 /**
- *  Social平台授权操作的回调
+ *  Social platform authorization callback
  *
- *  @param loginResult 表示用户信息 类型<NSDictionary>
- *  @param error  表示回调的错误信息
+ *  @param loginResult platform authorization information. result class <NSDictionary>
+ *  @param error error message
  */
 typedef void (^TTGCSocialPlateLoginCompletionHandler)(id _Nullable loginResult, NSError *_Nullable error);
 
 /**
- *  Social平台取消授权操作的回调
+ *  Social platform cancels the authorization operation callback
  *
- *  @param logoutResult 表示用户信息 类型<NSDictionary>
- *  @param error  表示回调的错误信息
+ *  @param logoutResult unauthorization infomation. result class <NSDictionary>
+ *  @param error error message
  */
 typedef void (^TTGCSocialPlateLogoutCompletionHandler)(id _Nullable logoutResult, NSError *_Nullable error);
 
 /**
- *  收到通知的回调
+ *  Recieve notification callbackd
  *
- *  @param result 表示通知消息
- *  @param error  表示回调的错误信息
+ *  @param result notification result
+ *  @param error error message
  */
 typedef void (^TTGCNotificationCompletionHandler)(id _Nullable result, NSError *_Nullable error);
 
 /**
- *  调用系统相册回调
+ *  Using the system album select photos callback
  *
- *  @param mediaInfo 表示返回media信息 类型<NSDictionary>
- *  mediaInfo中对应的key和数据类型：
- *  MediaType       <NSString>  图片：public.image 视频：public.movie
+ *  @param mediaInfo selected media information. result class <NSDictionary>
+ *  mediaInfo:
+ *   keys            values
+ *  MediaType       <NSString>   eg. Photo：public.image  Video：public.movie
  *  ImageURL        <NSURL>
  *  OriginalImage   <UIImage>
- *  ReferenceURL    <NSURL>an NSURL that references an asset
+ *  ReferenceURL    <NSURL>      an NSURL that references an asset
  *
- *  @param error  表示回调的错误信息
+ *  @param error error message
  */
 typedef void (^TTGCSocialSystemPhotoCompletionHandler)(id _Nullable mediaInfo, NSError *_Nullable error);
 
 /**
- *  登出的回调
+ *  Logout callback
  *
- *  @param success 表示是否成功
- *  @param error  表示回调的错误信息
+ *  @param success <BOOL>
+ *  @param error error message
  */
 typedef void (^TTGCLogoutCompleteHandler)(BOOL success, NSError *_Nullable error);
 
 /**
- *  获取好友列表的回调
+ *  ToTok Friends list callback
  *
- *  @param list 表示好友列表数据
- *  @param error  表示回调的错误信息
+ *  @param list <NSArray>
+ *  @param error error message
  */
 typedef void (^TTGCToTokFriendsCompletionHandler)(id _Nullable list, NSError *_Nullable error);
 
 /**
- *  分享的回调
+ *  Share callback
  *
- *  @param success 表示分享是否成功
- *  @param error  表示回调的错误信息
+ *  @param success <BOOL>
+ *  @param error error message
  */
 typedef void (^TTGCShareCompleteHandler)(BOOL success, NSError *_Nullable error);
 
 /**
  *  Universal Link Handle
  *
- *  @param url 表示UniversalUrl
- *  @param error  表示回调的错误信息
+ *  @param url url of link
+ *  @param error error message
  */
 typedef void (^TTGCUniversalLinkHandler)(NSURL *url, NSError *_Nullable error);
 
 /**
- *  支付过程的回调
+ *  Pay progress status callback
  *
- *  @param orderStatus 表示支付过程状态
+ *  @param orderStatus <NS_ENUM>
  */
 typedef void (^TTGCOrderProgressHandler)(TTGCOderStatus orderStatus);
 
 /**
- *  支付结束的回调
+ *  Pay result callback
  *
- *  @param orderInfo 表示订单信息
- *  @param error  表示回调的错误信息
+ *  @param orderInfo order detail information
+ *  @param error error message
  */
 typedef void (^TTGCOrderCompletionHandler)(id _Nullable orderInfo, NSError *_Nullable error);
 
 /**
- *  通用操作的回调
+ *  Get version info callback
  *
- *  @param result 表示返回的结果
- *  @param error  表示回调的错误信息
+ *  @param hasNewVersion has new version
+ *  @param versionInfo the version detail information. class model <TTGCAppVersion>
+ *  @param error error message
+ */
+typedef void (^TTGCVersionCompletionHandler)(BOOL hasNewVersion, TTGCAppVersionModel *_Nullable versionInfo, NSError *_Nullable error);
+
+/**
+ *  Common result callback
+ *
+ *  @param result common result
+ *  @param error error message
  */
 typedef void (^TTGCCompletionHandler)(id _Nullable result, NSError *_Nullable error);
 
 
 /////////////////////////////////////////////////////////////////////////////
-//平台的失败错误码--start
+//Platform error code --start
 /////////////////////////////////////////////////////////////////////////////
 /**
- *  返回错误类型
+ *  Error Type
  */
 typedef NS_ENUM(NSInteger, TTGCPlatformErrorType) {
-    TTGCPlatformErrorType_Unknow            = 2000,             // 未知错误
-    TTGCPlatformErrorType_AuthorizeFailed   = 2001,             // 授权失败
-    TTGCPlatformErrorType_ForUserInfoFailed = 2002,             // 请求用户信息失败
-    TTGCPlatformErrorType_LoginFailed       = 2003,             // 登录失败
-    TTGCPlatformErrorType_FriendsListFailed = 2004,             // 获取好友列表失败
-    TTGCPlatformErrorType_MessageSendFailed = 2005,             // 消息发送失败
-    TTGCPlatformErrorType_PayFailed         = 2006,             // 支付失败
-    TTGCPlatformErrorType_ShareFailed       = 2007,             // 分享失败
-    TTGCPlatformErrorType_NotInstall        = 2008,             // 应用未安装
-    TTGCPlatformErrorType_NotNetWork        = 2009,             // 网络异常
-    TTGCPlatformErrorType_SourceError       = 2010,             // 第三方错误
+    TTGCPlatformErrorType_Unknow            = 2000,             // unknow error
+    TTGCPlatformErrorType_AuthorizeFailed   = 2001,             // authorization failed
+    TTGCPlatformErrorType_ForUserInfoFailed = 2002,             // get user information failed
+    TTGCPlatformErrorType_LoginFailed       = 2003,             // login failed
+    TTGCPlatformErrorType_FriendsListFailed = 2004,             // get friends list failed
+    TTGCPlatformErrorType_MessageSendFailed = 2005,             // send message failed
+    TTGCPlatformErrorType_PayFailed         = 2006,             // pay failed
+    TTGCPlatformErrorType_ShareFailed       = 2007,             // share failed
+    TTGCPlatformErrorType_NotInstall        = 2008,             // the application uninstall
+    TTGCPlatformErrorType_NotNetWork        = 2009,             // net work error
+    TTGCPlatformErrorType_SourceError       = 2010,             // third error
+    TTGCPlatformErrorType_NoPermission      = 2011,             // no permissions
 };
 
 /** The domain name used for the TTGCPlatformErrorType */
 extern NSString* const TTGCPlatformErrorDomain;
 
 /////////////////////////////////////////////////////////////////////////////
-//平台的失败错误码--end
+//Platform error code --end
 /////////////////////////////////////////////////////////////////////////////
 
 
 @interface TTGCConfig : NSObject
 
 /**
- *  创建错误类型
+ *  Create an error object
  *
- *  @param errorType 平台类型
- *  @param userInfo  用户的自定义信息userInfo
+ *  @param errorType Error type
+ *  @param userInfo  Customized error message
  *
- *  @return 返回错误对象
+ *  @return   Returns an object of type NSError
  */
 + (NSError *)errorWithTTGCErrorType:(TTGCPlatformErrorType)errorType userInfo:(id)userInfo;
 

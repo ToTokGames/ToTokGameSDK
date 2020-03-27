@@ -18,6 +18,8 @@
 */
 #define SETUP_TTGCHUD   {\
 [TTGCProgressHUD setMinimumDismissTimeInterval:1.5];\
+[TTGCProgressHUD setDefaultStyle:TTGCProgressHUDStyleCustom];\
+[TTGCProgressHUD setBackgroundColor:[UIColor groupTableViewBackgroundColor]];\
 [TTGCProgressHUD setDefaultMaskType:TTGCProgressHUDMaskTypeClear];\
 }
 
@@ -58,4 +60,14 @@
  *  TTGCHUD 提示
  */
 #define TTGCHUD_HINT(msg) [TTGCProgressHUD showInfoWithStatus:msg];
+
+/**
+ *  TTGCHUD 请求失败
+ */
+#define TTGCHUD_ERROR(msg) [TTGCProgressHUD showErrorWithStatus:msg];
+
+/**
+ *  TTGCHUD 请求成功
+ */
+#define TTGCHUD_SUCCESS(msg) [TTGCProgressHUD showSuccessWithStatus:msg];
 

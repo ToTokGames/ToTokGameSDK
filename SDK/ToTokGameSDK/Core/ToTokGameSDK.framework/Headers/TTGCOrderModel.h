@@ -13,19 +13,19 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TTGCOrderModel : NSObject
 
 
-@property (nonatomic, copy) NSString *orderId; //订单id
-@property (nonatomic, copy) NSString *orderRef; //支付订单第三方订单id
+@property (nonatomic, copy) NSString *orderId; //order id
+@property (nonatomic, copy) NSString *orderRef; //pay-third orderid
 
-@property (nonatomic, copy) NSString *channel; //支付渠道
-@property (nonatomic, copy) NSString *env; //支付环境
-@property (nonatomic, copy) NSString *sku; //商品代码
-@property (nonatomic, copy) NSString *amount; //金额
+@property (nonatomic, copy) NSString *channel; //pay channel  0: apple，1: google, 2: totok
+@property (nonatomic, copy) NSString *env; //pay environment  0: sandbox，1: production
+@property (nonatomic, copy) NSString *sku;
+@property (nonatomic, copy) NSString *amount;
 
-@property (nonatomic, copy) NSString *createTime; //创建时间
-@property (nonatomic, copy) NSString *payTime; //支付时间
-@property (nonatomic, copy) NSString *cancelTime; //取消时间
+@property (nonatomic, copy) NSString *createTime;
+@property (nonatomic, copy) NSString *payTime;
+@property (nonatomic, copy) NSString *cancelTime;
 
-@property (nonatomic, copy) NSString *status; //支付状态
+@property (nonatomic, copy) NSString *status; // 1: success, 2: failure
 
 
 @end

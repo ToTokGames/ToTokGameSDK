@@ -12,22 +12,22 @@
  *  用户类型
  */
 typedef NS_ENUM(NSInteger, TTGCLoginType) {
-    TTGCLoginType_unloggedIn       = 0,             // 未登录
-    TTGCLoginType_ToTok            = 1,             // ToTok用户
-    TTGCLoginType_GameCenter       = 2,             // GameCenter用户
-    TTGCLoginType_Facebook         = 3,             // Facebook用户
-    TTGCLoginType_Guest            = 4,             // 游客
+    TTGCLoginType_unloggedIn       = 0,             // unlogin
+    TTGCLoginType_ToTok            = 1,             // ToTok user
+    TTGCLoginType_GameCenter       = 2,             // GameCenter user
+    TTGCLoginType_Facebook         = 3,             // Facebook user
+    TTGCLoginType_Guest            = 4,             // Guest user
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TTGCUserModel : NSObject
 
-@property (nonatomic) TTGCLoginType userType; //用户类型
-@property (nonatomic, copy) NSString *userId; //游戏中心用户id
-@property (nonatomic, copy) NSString *nickname; //昵称
-@property (nonatomic, copy) NSString *photoUrl; //头像
-@property (nonatomic, copy) NSString *pushOff; //push开关,0:push打开，1:push关闭
+@property (nonatomic) TTGCLoginType userType; //user type
+@property (nonatomic, copy) NSString *userId; //totok gamecenter userid
+@property (nonatomic, copy) NSString *nickname; //nick name
+@property (nonatomic, copy) NSString *photoUrl; //photo
+@property (nonatomic, copy) NSString *pushOff;
 
 
 @end

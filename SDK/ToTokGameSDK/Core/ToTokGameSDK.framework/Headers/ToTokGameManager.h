@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)defaultManager;
 
 /**
-初始化
+Initialization
 */
 - (void)setupWithAppId:(NSString *)appid Secret:(NSString *)secret GameId:(NSString *)gameid Application:(UIApplication *)application Options:(NSDictionary *)launchOptions AnimationHandle:(TTGCLaunchCompletion)handle;
 
@@ -26,213 +26,233 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)applicationDidBecomeActive:(UIApplication *)application;
 - (void)applicationWillTerminate:(UIApplication *)application;
 
-#pragma mark - 登录
+#pragma mark - Login
 
 /**
-登录用户类型
+Login User Type
 */
 - (TTGCLoginType)loginType;
 
 /**
-ToTok登录
+ToTok Login
  
-@param completion 登录操作回调
+@param completion login callback
 */
 - (void)loginWithToTokCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
-Gamecenter登录
+Gamecenter Login
  
-@param completion 登录操作回调
+@param completion login callback
 */
 - (void)loginWithGameCenterCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
-Facebook登录
+Facebook Login
  
-@param completion 登录操作回调
+@param completion login callback
 */
 - (void)loginWithFacebookCompletion:(TTGCUserCompletionHandler)completion;
 
 
 /**
-三方应用 授权回调（必须在AppDelegate中实现）
+Third-party callback（Must be implemented in AppDelegate）
 */
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
 /**
-游客登录
+Guests Login
  
-@param completion 登录操作回调
+@param completion login callback
 */
 - (void)guestLoginCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
-拉取用户信息
+Get User Information
  
-@param completion 用户信息回调
+@param completion user information callback
 */
 - (void)userInfoCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
-登出
+Logout
  
-@param completion 用户登出结果回调
+@param completion logout reult
 */
 - (void)logout:(TTGCLogoutCompleteHandler)completion;
 
-#pragma mark - 分享
+#pragma mark - Share
 
 /**
- *  FB分享
+ *  FB share
  *
  *  @param messageObject  share content type @see TTGCSocialFBLink TTGCSocialFBImages
- *  @param completion   回调
+ *  @param completion   callback
  */
 - (void)facebookShareMessage:(id)messageObject completion:(TTGCShareCompleteHandler)completion;
 
 /**
- *  WhatsApp分享
+ *  WhatsApp share
  *
  *  @param messageObject  share content type @see TTGCSocialWALink TTGCSocialWAImages
- *  @param completion   回调
+ *  @param completion   callback
  */
 - (void)whatsAppShareMessage:(id)messageObject completion:(TTGCShareCompleteHandler)completion;
 
 /**
- *  调用系统相册
+ *  Use System Album
  *
- *  @param completion   回调
- *  回调数据 @TTGCSocialSystemPhotoCompletionHandler
+ *  @param completion   callback
+ *  callback data @TTGCSocialSystemPhotoCompletionHandler
  */
 - (void)openSystemPhotoCompletion:(TTGCSocialSystemPhotoCompletionHandler)completion;
 
 
-#pragma mark - 推送相关
+#pragma mark - Push Notification
 
 /**
-接收deviceToken（必须在AppDelegate中实现）
+Recieve deviceToken（Must be implemented in AppDelegate）
  
-@param token 苹果返回的token值
+@param token apns return the token
 */
 - (void)registerDeviceToken:(NSData *)token;
 
 /**
-移除所有通知
+ Remove all notifications
 */
 - (void)cleanNotification;
 
 /**
-接收远程通知
+Receive remote notifications
 */
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
 
 /**
-获取远程通知信息
+Get remote notification information
 */
 - (void)getRemoteNotification:(TTGCNotificationCompletionHandler)completion;
 
 /**
-设置用户是否接收推送
+Set whether users receive pushes
 
-@param pushOn YES:打开push NO:关闭push
-@param handler 返回设置结果 YES:设置成功 NO:设置失败
+@param pushOn YES:open push NO:close push
+@param handler return the setting result YES:success NO:failure
 */
 - (void)settingPush:(BOOL)pushOn Result:(void(^)(BOOL success))handler;
 
 /**
-判断用户系统推送是否打开
+Determine if system push is on
  
-@param handler 返回系统推送是否打开 返回值布尔类型 YES:打开了通知 NO:关闭了通知
+@param handler The return value is a boolean YES:Notification turned on, NO:Notification closed
 */
 - (void)checkSystemNotificationEnable:(void(^)(BOOL isOn))handler;
 
 /**
-打开系统通知设置
+Open system notification settings page
 */
 - (void)systemNotificationSetting;
 
-#pragma mark - ToTok消息
+#pragma mark - ToTok
 
 /**
-从服务端拉取好友列表
+Get friend list from server
  
-@param completion 好友列表回调
+@param completion friend list callback
 */
 - (void)getFriendsFromServerCompletion:(TTGCToTokFriendsCompletionHandler)completion;
 
 /**
-从本地读取好友列表（服务端获取之后才会有本地数据）
+Read the friend list from the local (the local data will not be available until the server obtains it)
  
-@param completion 好友列表回调
+@param completion friend list callback
 */
 - (void)getFriendsCompletion:(TTGCToTokFriendsCompletionHandler)completion;
 
 
-#pragma mark - 支付
+#pragma mark - Pay
 
 /**
-购买商品
+Purchase
  
-@param sku 商品ID
-@param progress 购买过程回调
-@param completion 购买完成回调
+@param sku goods ID
+@param progress Purchase process callback
+@param completion Purchase completion callback
 */
 - (void)buyProductWithSKU:(NSString *)sku Progress:(TTGCOrderProgressHandler)progress Completion:(TTGCOrderCompletionHandler)completion;
 
 /**
-查询订单
+Checking Order
  
-@param orderID 订单id
-@param completion 查询结果 回调返回订单信息
+@param orderID order id
+@param completion search result, callback to return order information
 */
 - (void)queryOrderWithOrderId:(NSString *)orderID Completion:(TTGCOrderCompletionHandler)completion;
 
-#pragma mark - 配置信息
+#pragma mark - Configuration information
 
 /**
-获取用户协议url
+Get User Agreement URL
 */
 - (NSString *)getAgreementUrlString;
 
 /**
-获取隐私协议url
+Get privacy agreement url
 */
 - (NSString *)getPrivacyUrlString;
 
 /**
-获取主页url
+Get homepage url
 */
 - (NSString *)getHomepageUrlString;
 
 
-#pragma mark - SDK 配置
+#pragma mark - SDK Configuration
 
-#pragma - 配置域名
+#pragma - Configure the domain
 /**
- 切换 SDK server 环境
+ Switch SDK server environment
 */
-- (void)setServerDomainTest;//测试环境
-- (void)setServerDomainProduction;//生产环境
+- (void)setServerDomainTest;//test environment
+- (void)setServerDomainProduction;//production environment
 
 /**
- 获取当前 SDK server 域名前缀
+ Get the current SDK server domain
 */
 - (NSString *)SDKServerDomain;
 
-#pragma - log信息
+#pragma - Log Information
 /**
- log信息输出 开启 关闭
+ Log information output. open & close
 */
 - (void)openLogInfo;
 - (void)closeLogInfo;
 
-#pragma - 支付环境
+#pragma - Payment Environment
 /**
- 切换 支付环境
+ Switch payment environment
 */
-- (void)setPayEnvironmentTest;//测试环境
-- (void)setPayEnvironmentProduction;//生产环境
+- (void)setPayEnvironmentTest;//test environment
+- (void)setPayEnvironmentProduction;//production environment
+- (int)getPayEnvironment;//1 production   2 test
+
+#pragma mark - App Update
+/**
+ Get app version info
+ 
+ @param completion version info callback
+ */
+- (void)checkAppVersionCompletion:(TTGCVersionCompletionHandler)completion;
+
+/**
+ Open appstore show details of app.
+ 
+ @param identifier App Store item identifier (NSNumber) of the product
+ */
+- (void)openAppStoreWithStoreIdentifier:(NSString *)identifier;
+
+#pragma mark - Universal Link
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+
 
 @end
 
