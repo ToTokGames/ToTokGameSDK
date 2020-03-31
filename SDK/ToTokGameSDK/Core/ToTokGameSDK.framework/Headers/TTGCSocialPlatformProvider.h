@@ -97,11 +97,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)ttgcSocial_isSupport;
 
 /**
-*  当前平台token是否有效
-*
-*  @return YES代表有效，NO代表无效
+ *  当前平台token是否有效
+ *
+ *  @return YES代表有效，NO代表无效
 */
 - (BOOL)ttgcSocial_isCurrentAccessTokenActive;
+
+#pragma mark - Facebook unique
+/**
+ *  Show Facebook friends and send game invitations.
+ *
+ *  @param messageObject  message content @see TTGCMessageObject
+ *  @param completion   回调
+ *
+*/
+- (void)ttgcSocial_showFBFriendsSendInvitations:(TTGCSocialMessageObject *)messageObject
+                                     completion:(TTGCShareCompleteHandler)completion;
 
 @end
 

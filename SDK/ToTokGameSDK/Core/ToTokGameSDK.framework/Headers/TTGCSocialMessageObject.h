@@ -27,11 +27,12 @@ typedef NS_ENUM(NSInteger, TTGCSocialPlateType) {
  */
 typedef NS_ENUM(NSInteger, TTGCShareContentType) {
     TTGCShareContent_Link          = 1,
-    TTGCShareContent_Photo         = 2,
+    TTGCShareContent_FBGameInvite  = 2,
+    TTGCShareContent_Photo         = 3,
     
     //The following content is not open yet
-    TTGCShareContent_Video         = 3,
-    TTGCShareContent_Media         = 4,
+    TTGCShareContent_Video         = 4,
+    TTGCShareContent_Media         = 5,
 };
 
 /**
@@ -130,6 +131,13 @@ If specified, the quote text will render with custom styling on top of the link.
 @interface TTGCSocialFBInvite : NSObject
 
 @property (nonatomic, copy, nullable) NSString *quote; // Some quote text of the link
+
+@end
+
+// FacebookGameInvite to friends Model
+@interface TTGCSocialFBFriendsGameInvite : NSObject
+
+@property (nonatomic, copy, nullable) NSString *inviteString;
 
 @end
 
