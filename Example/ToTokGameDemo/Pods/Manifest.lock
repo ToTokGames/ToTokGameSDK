@@ -1,0 +1,47 @@
+PODS:
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.13.1):
+    - FBSDKLoginKit/Login (= 5.13.1)
+  - FBSDKLoginKit/Login (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.13.1):
+    - FBSDKShareKit/Share (= 5.13.1)
+  - FBSDKShareKit/Share (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - SDWebImage (5.7.0):
+    - SDWebImage/Core (= 5.7.0)
+  - SDWebImage/Core (5.7.0)
+  - ToTokGameSDK (1.0.3):
+    - ToTokGameSDK/Facebook (= 1.0.3)
+  - ToTokGameSDK/Facebook (1.0.3):
+    - FBSDKCoreKit (~> 5.13.1)
+    - FBSDKLoginKit (~> 5.13.1)
+    - FBSDKShareKit (~> 5.13.1)
+
+DEPENDENCIES:
+  - SDWebImage
+  - ToTokGameSDK
+
+SPEC REPOS:
+  trunk:
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - SDWebImage
+    - ToTokGameSDK
+
+SPEC CHECKSUMS:
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  FBSDKLoginKit: c7c6ffd9ca9ea45aee32361840af040ad8f6706a
+  FBSDKShareKit: 8a0e4d7172c7b706991c834cff2bf74e7b4726e3
+  SDWebImage: a99471f452bdfa0ca52ddf5b1adf2b61cab1d1eb
+  ToTokGameSDK: 1f0981bda0b87275a17e7de0188aad26b62444b3
+
+PODFILE CHECKSUM: 1a4b4d9164b6df570aff7bb278dc190a781ae97f
+
+COCOAPODS: 1.9.1
