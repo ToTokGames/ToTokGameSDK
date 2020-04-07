@@ -100,6 +100,13 @@ typedef void (^TTGCSocialSystemPhotoCompletionHandler)(id _Nullable mediaInfo, N
 typedef void (^TTGCLogoutCompleteHandler)(BOOL success, NSError *_Nullable error);
 
 /**
+ *  Logout callback
+ *
+ *  @param information notification message
+ */
+typedef void (^TTGCAccountKickedHandler)(NSString *_Nullable information);
+
+/**
  *  ToTok Friends list callback
  *
  *  @param list <NSArray>
@@ -163,18 +170,19 @@ typedef void (^TTGCCompletionHandler)(id _Nullable result, NSError *_Nullable er
  *  Error Type
  */
 typedef NS_ENUM(NSInteger, TTGCPlatformErrorType) {
-    TTGCPlatformErrorType_Unknow            = 2000,             // unknow error
-    TTGCPlatformErrorType_AuthorizeFailed   = 2001,             // authorization failed
-    TTGCPlatformErrorType_ForUserInfoFailed = 2002,             // get user information failed
-    TTGCPlatformErrorType_LoginFailed       = 2003,             // login failed
-    TTGCPlatformErrorType_FriendsListFailed = 2004,             // get friends list failed
-    TTGCPlatformErrorType_MessageSendFailed = 2005,             // send message failed
-    TTGCPlatformErrorType_PayFailed         = 2006,             // pay failed
-    TTGCPlatformErrorType_ShareFailed       = 2007,             // share failed
-    TTGCPlatformErrorType_NotInstall        = 2008,             // the application uninstall
-    TTGCPlatformErrorType_NotNetWork        = 2009,             // net work error
-    TTGCPlatformErrorType_SourceError       = 2010,             // third error
-    TTGCPlatformErrorType_NoPermission      = 2011,             // no permissions
+    TTGCPlatformErrorType_Unknow              = 2000,             // unknow error
+    TTGCPlatformErrorType_AuthorizeFailed     = 2001,             // authorization failed
+    TTGCPlatformErrorType_ForUserInfoFailed   = 2002,             // get user information failed
+    TTGCPlatformErrorType_LoginFailed         = 2003,             // login failed
+    TTGCPlatformErrorType_FriendsListFailed   = 2004,             // get friends list failed
+    TTGCPlatformErrorType_MessageSendFailed   = 2005,             // send message failed
+    TTGCPlatformErrorType_PayFailed           = 2006,             // pay failed
+    TTGCPlatformErrorType_ShareFailed         = 2007,             // share failed
+    TTGCPlatformErrorType_NotInstall          = 2008,             // the application uninstall
+    TTGCPlatformErrorType_NotNetWork          = 2009,             // net work error
+    TTGCPlatformErrorType_SourceError         = 2010,             // third error
+    TTGCPlatformErrorType_NoPermission        = 2011,             // no permissions
+    TTGCPlatformErrorType_UnauthorizedRequest = 2012,             // unauthorized request, need login.
 };
 
 /** The domain name used for the TTGCPlatformErrorType */

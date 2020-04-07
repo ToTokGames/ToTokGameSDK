@@ -20,4 +20,5 @@ FOUNDATION_EXPORT const unsigned char ToTokGameSDKVersionString[];
 #import <ToTokGameSDK/TTGCSocialHandler.h>
 #import <ToTokGameSDK/TTGCProgressHUDDefine.h>
 #import <ToTokGameSDK/TTGCProgressHUD.h>
+#import <ToTokGameSDK/TTGCNetWorkManager.h>
 

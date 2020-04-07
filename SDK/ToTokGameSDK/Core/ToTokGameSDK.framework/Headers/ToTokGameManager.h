@@ -81,6 +81,13 @@ Logout
 */
 - (void)logout:(TTGCLogoutCompleteHandler)completion;
 
+/**
+Notification of account being kicked out
+ 
+@param handler notification information
+*/
+- (void)accountKickedNotification:(TTGCAccountKickedHandler)handler;
+
 #pragma mark - Share
 
 /**
