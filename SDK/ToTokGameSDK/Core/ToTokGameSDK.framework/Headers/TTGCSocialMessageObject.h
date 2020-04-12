@@ -90,6 +90,16 @@ If specified, the quote text will render with custom styling on top of the link.
 @property (nonatomic, copy) NSArray *photos;
 
 /**
+ Share photos array
+ 
+ Supported types
+ facebook:（UIImage、NSURL、PHAsset）
+ messenger: (UIImage、NSURL)
+ whatsApp: (UIImage、NSURL)
+*/
+@property (nonatomic, copy) UIImage *photoImage;
+
+/**
  Video
  
  Supported types
@@ -144,7 +154,7 @@ If specified, the quote text will render with custom styling on top of the link.
 // Facebook Image Model
 @interface TTGCSocialFBImages : NSObject
 
-@property (nonatomic, copy) NSArray *photos; // share images array（NSData、PHAsset、NSURL）
+@property (nonatomic, copy) UIImage *photoImage; // share image <UIImage>
 
 @end
 

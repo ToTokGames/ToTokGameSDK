@@ -63,8 +63,17 @@
 }
 
 - (IBAction)fbpic:(id)sender {
-//    There are some bugs here that are being fixed.
-    TTGCHUD_HINT(@"There are some bugs here that are being fixed.");
+    UIImage *image = [UIImage imageNamed:@"totokgame_logo_1024"];
+    TTGCSocialFBImages *obj = [[TTGCSocialFBImages alloc] init];
+    obj.photos = @[image].mutableCopy;
+    [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+        if (success) {
+        } else {
+            if (error) {
+                TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
+            }
+        }
+    }];
 }
 
 - (IBAction)walink:(id)sender {
@@ -89,9 +98,9 @@
                     
                     UIImage *image = [mediaInfo objectForKey:@"OriginalImage"];
                     if (image) {
-                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                             TTGCSocialWAImages *obj = [[TTGCSocialWAImages alloc] init];
-                            obj.photos = @[image];
+                            obj.photos = @[image].mutableCopy;
                             [[ToTokGameManager defaultManager] whatsAppShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
                                 if (success) {
                                 } else {

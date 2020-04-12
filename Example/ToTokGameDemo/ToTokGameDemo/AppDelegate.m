@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import <ToTokGameSDK/ToTokGameSDK.h>
 
-#import "DCLog.h"
-
 @interface AppDelegate ()
 
 @end
@@ -34,9 +32,7 @@
         //启动动画完成 可以这里添加启动自己的页面
         
     }];
-    
-    [DCLog setLogViewEnabled:YES];
-            
+                
     return YES;
 }
 

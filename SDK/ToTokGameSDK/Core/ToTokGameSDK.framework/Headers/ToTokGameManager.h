@@ -34,6 +34,11 @@ Login User Type
 - (TTGCLoginType)loginType;
 
 /**
+Login User Information(Model data is only available when logged in.)
+*/
+- (TTGCUserModel *)loginUserModel;
+
+/**
 ToTok Login
  
 @param completion login callback
@@ -221,6 +226,7 @@ Get homepage url
 */
 - (void)setServerDomainTest;//test environment
 - (void)setServerDomainProduction;//production environment
+- (void)setSDKServerDomain:(NSString *)domain;
 
 /**
  Get the current SDK server domain

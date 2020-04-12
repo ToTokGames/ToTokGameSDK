@@ -202,7 +202,7 @@
 				21FD5E4E243C734B000989C2 /* Frameworks */,
 				21FD5E4F243C734B000989C2 /* Resources */,
 				328034E00416E5173009C1A0 /* [CP] Embed Pods Frameworks */,
-				7CFC3ADDDD6C5F1C14734AA8 /* [CP] Copy Pods Resources */,
+				995854AE293B5ACB95B383E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +302,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CFC3ADDDD6C5F1C14734AA8 /* [CP] Copy Pods Resources */ = {
+		995854AE293B5ACB95B383E5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,6 +480,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 6XULWW788F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToTokGameDemo",
+					"$(PROJECT_DIR)/ToTokGameDemo/Core",
+				);
 				INFOPLIST_FILE = ToTokGameDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,7 +494,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"TTGCSocialFacebook\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -566,6 +570,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 6XULWW788F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToTokGameDemo",
+					"$(PROJECT_DIR)/ToTokGameDemo/Core",
+				);
 				INFOPLIST_FILE = ToTokGameDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,7 +584,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"TTGCSocialFacebook\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",

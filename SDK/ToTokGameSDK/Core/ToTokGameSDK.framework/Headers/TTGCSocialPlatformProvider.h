@@ -114,6 +114,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)ttgcSocial_showFBFriendsSendInvitations:(TTGCSocialMessageObject *)messageObject
                                      completion:(TTGCShareCompleteHandler)completion;
 
+#pragma mark - GA unique
+
+- (void)ttgcLog_eventShareWithTarget:(NSString *)target shareType:(NSString *)type;
+
+- (void)ttgc_setAnalyticsUser;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

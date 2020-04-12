@@ -90,6 +90,16 @@ If specified, the quote text will render with custom styling on top of the link.
 @property (nonatomic, copy) NSArray *photos;
 
 /**
+ Share photos array
+ 
+ Supported types
+ facebook:（UIImage、NSURL、PHAsset）
+ messenger: (UIImage、NSURL)
+ whatsApp: (UIImage、NSURL)
+*/
+@property (nonatomic, copy) UIImage *photoImage;
+
+/**
  Video
  
  Supported types
