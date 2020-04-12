@@ -64,7 +64,38 @@
 
 - (IBAction)fbpic:(id)sender {
     //There are some bugs here that are being fixed.
-    TTGCHUD_HINT(@"There are some bugs here that are being fixed.");
+//    TTGCHUD_HINT(@"There are some bugs here that are being fixed.");
+    [[ToTokGameManager defaultManager] openSystemPhotoCompletion:^(id  _Nullable mediaInfo, NSError * _Nullable error) {
+        if (mediaInfo) {
+            NSString *type = [mediaInfo objectForKey:@"MediaType"];
+            if (type) {
+                if ([type isEqualToString:@"public.image"]) {
+                    
+                    UIImage *image = [mediaInfo objectForKey:@"OriginalImage"];
+                    if (image) {
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            TTGCSocialFBImages *obj = [[TTGCSocialFBImages alloc] init];
+                            obj.photos = @[image];
+                            [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+                                if (success) {
+                                } else {
+                                    if (error) {
+                                        TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
+                                    }
+                                }
+                            }];
+                        });
+                        
+                    } else {
+                        TTGCHUD_HINT(@"the image is empty");
+                    }
+                    
+                } else if ([type isEqualToString:@"public.movie"]) {
+                    TTGCHUD_HINT(@"you seleced a video");
+                }
+            }
+        }
+    }];
 }
 
 - (IBAction)walink:(id)sender {

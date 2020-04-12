@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R6v-Mu-AB4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -422,13 +423,29 @@
                                     <constraint firstItem="AfB-Bq-P4W" firstAttribute="top" secondItem="Wec-QA-m9E" secondAttribute="bottom" constant="8" id="z6e-pl-BVD"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9u-eb-nGz">
+                                <rect key="frame" x="319" y="799" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.56470588239999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="XSW-e1-8Qh"/>
+                                    <constraint firstAttribute="height" constant="30" id="aVY-mF-oAY"/>
+                                </constraints>
+                                <state key="normal" title="log">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="log:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWy-6E-3a0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Sec-Wc-otX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Yo-ds-0TA"/>
                             <constraint firstAttribute="bottom" secondItem="Sec-Wc-otX" secondAttribute="bottom" id="8sa-ju-Kyb"/>
+                            <constraint firstAttribute="trailing" secondItem="Z9u-eb-nGz" secondAttribute="trailing" constant="23" id="G3b-QT-R8l"/>
                             <constraint firstItem="rEt-OD-pCn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="X1s-hX-s3J"/>
                             <constraint firstItem="Sec-Wc-otX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dof-cw-I7A"/>
+                            <constraint firstItem="TMx-bi-Mpn" firstAttribute="top" secondItem="Z9u-eb-nGz" secondAttribute="bottom" constant="33" id="fN3-Of-OfY"/>
                             <constraint firstAttribute="trailing" secondItem="Sec-Wc-otX" secondAttribute="trailing" id="g5M-IF-OVq"/>
                         </constraints>
                     </view>
@@ -438,6 +455,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="acountType" destination="iZW-Va-1TX" id="wOi-lF-JQW"/>
+                        <outlet property="logButton" destination="Z9u-eb-nGz" id="vvN-bO-Kw3"/>
                         <outlet property="logoutButton" destination="Ow3-iH-I2R" id="xd7-1Q-0ik"/>
                         <outlet property="nicknameLabel" destination="iso-1W-VVt" id="xaL-WR-etB"/>
                         <outlet property="photoImageView" destination="Ip4-0g-E8j" id="053-5A-qMd"/>
@@ -446,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="42"/>
+            <point key="canvasLocation" x="528.98550724637687" y="41.517857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cnt-uf-wNn">

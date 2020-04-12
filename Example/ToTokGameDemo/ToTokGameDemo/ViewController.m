@@ -18,6 +18,8 @@
 #import "ShareViewController.h"
 #import "AboutViewController.h"
 
+#import "DCLog.h"
+
 //UI配置
 #define login_bg_alpha 0.6
 #define loginview_bg_color @"#53ceca"
@@ -80,6 +82,10 @@
         } else {
         }
     }];
+}
+
+- (IBAction)log:(id)sender {
+    [DCLog changeVisible];
 }
 
 - (void)setupUI {

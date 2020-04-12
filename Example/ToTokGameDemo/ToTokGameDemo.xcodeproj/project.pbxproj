@@ -23,6 +23,8 @@
 		21FD5E89243C8924000989C2 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FD5E7D243C8923000989C2 /* PayViewController.m */; };
 		21FD5E8A243C8924000989C2 /* DevSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FD5E80243C8924000989C2 /* DevSettingViewController.xib */; };
 		21FD5E8B243C8924000989C2 /* DevSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FD5E81243C8924000989C2 /* DevSettingViewController.m */; };
+		21FD5E92243CC32A000989C2 /* DCLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FD5E90243CC32A000989C2 /* DCLogView.m */; };
+		21FD5E93243CC32A000989C2 /* DCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FD5E91243CC32A000989C2 /* DCLog.m */; };
 		EDDA14A35F26C2F03487CA7E /* Pods_ToTokGameDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BC8AC781C3B04A199E5E3F /* Pods_ToTokGameDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,10 @@
 		21FD5E81243C8924000989C2 /* DevSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevSettingViewController.m; sourceTree = "<group>"; };
 		21FD5E82243C8924000989C2 /* DevSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevSettingViewController.h; sourceTree = "<group>"; };
 		21FD5E8C243C898C000989C2 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		21FD5E8E243CC32A000989C2 /* DCLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLogView.h; sourceTree = "<group>"; };
+		21FD5E8F243CC32A000989C2 /* DCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLog.h; sourceTree = "<group>"; };
+		21FD5E90243CC32A000989C2 /* DCLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLogView.m; sourceTree = "<group>"; };
+		21FD5E91243CC32A000989C2 /* DCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLog.m; sourceTree = "<group>"; };
 		244919F34350F4B2027B2D04 /* Pods-ToTokGameDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToTokGameDemo.release.xcconfig"; path = "Target Support Files/Pods-ToTokGameDemo/Pods-ToTokGameDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A873B610818DA5518765A940 /* Pods-ToTokGameDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToTokGameDemo.debug.xcconfig"; path = "Target Support Files/Pods-ToTokGameDemo/Pods-ToTokGameDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E6BC8AC781C3B04A199E5E3F /* Pods_ToTokGameDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToTokGameDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,7 @@
 				21FD5E75243C8923000989C2 /* Share */,
 				21FD5E79243C8923000989C2 /* TGWebViewController.h */,
 				21FD5E7A243C8923000989C2 /* TGWebViewController.m */,
+				21FD5E8D243CC32A000989C2 /* DCLog */,
 				21FD5E8C243C898C000989C2 /* Header.h */,
 				21FD5E54243C734B000989C2 /* AppDelegate.h */,
 				21FD5E55243C734B000989C2 /* AppDelegate.m */,
@@ -161,6 +168,17 @@
 				21FD5E80243C8924000989C2 /* DevSettingViewController.xib */,
 			);
 			path = DevSetting;
+			sourceTree = "<group>";
+		};
+		21FD5E8D243CC32A000989C2 /* DCLog */ = {
+			isa = PBXGroup;
+			children = (
+				21FD5E8E243CC32A000989C2 /* DCLogView.h */,
+				21FD5E8F243CC32A000989C2 /* DCLog.h */,
+				21FD5E90243CC32A000989C2 /* DCLogView.m */,
+				21FD5E91243CC32A000989C2 /* DCLog.m */,
+			);
+			path = DCLog;
 			sourceTree = "<group>";
 		};
 		72219B8AAE7789D2A55895CB /* Pods */ = {
@@ -315,6 +333,8 @@
 				21FD5E83243C8924000989C2 /* AboutViewController.m in Sources */,
 				21FD5E86243C8924000989C2 /* ShareViewController.m in Sources */,
 				21FD5E87243C8924000989C2 /* TGWebViewController.m in Sources */,
+				21FD5E93243CC32A000989C2 /* DCLog.m in Sources */,
+				21FD5E92243CC32A000989C2 /* DCLogView.m in Sources */,
 				21FD5E67243C734F000989C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
