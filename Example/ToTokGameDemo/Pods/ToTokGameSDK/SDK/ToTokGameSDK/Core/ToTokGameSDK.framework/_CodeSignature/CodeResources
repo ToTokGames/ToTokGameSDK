@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
-		pAOLDUV0dZ/7AKVV90DZRSeQ/bU=
+		10yvBeVX8v1GXLVNkFoN2Qp272g=
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+mbh5p8VYsnAJeth4buBruFx82Y=
+		p65cx2rOXEX5agZAbiBtlKYne5U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -261,11 +261,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pAOLDUV0dZ/7AKVV90DZRSeQ/bU=
+			10yvBeVX8v1GXLVNkFoN2Qp272g=
 			</data>
 			<key>hash2</key>
 			<data>
-			7kVcC/QVQjuazd+hfRIpreJpUyQJZhbhNfJ6sA8sstk=
+			wpz9NoGMWumf1HXpILe6tT1p58pT0VF/97JSZmSijH0=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>

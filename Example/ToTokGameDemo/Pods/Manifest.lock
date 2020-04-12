@@ -16,9 +16,9 @@ PODS:
   - SDWebImage (5.7.2):
     - SDWebImage/Core (= 5.7.2)
   - SDWebImage/Core (5.7.2)
-  - ToTokGameSDK (1.0.3):
-    - ToTokGameSDK/Facebook (= 1.0.3)
-  - ToTokGameSDK/Facebook (1.0.3):
+  - ToTokGameSDK (1.0.4):
+    - ToTokGameSDK/Facebook (= 1.0.4)
+  - ToTokGameSDK/Facebook (1.0.4):
     - FBSDKCoreKit (~> 5.13.1)
     - FBSDKLoginKit (~> 5.13.1)
     - FBSDKShareKit (~> 5.13.1)
@@ -40,7 +40,7 @@ SPEC CHECKSUMS:
   FBSDKLoginKit: c7c6ffd9ca9ea45aee32361840af040ad8f6706a
   FBSDKShareKit: 8a0e4d7172c7b706991c834cff2bf74e7b4726e3
   SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
-  ToTokGameSDK: 1f0981bda0b87275a17e7de0188aad26b62444b3
+  ToTokGameSDK: 4a7f996e94fced1fa84bddb4920392c762b50dd6
 
 PODFILE CHECKSUM: 6b3fd70a0de7c58e021415f4c3c65c87fa7c85a7
 

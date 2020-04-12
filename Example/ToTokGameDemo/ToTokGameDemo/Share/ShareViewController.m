@@ -65,7 +65,7 @@
 - (IBAction)fbpic:(id)sender {
     UIImage *image = [UIImage imageNamed:@"totokgame_logo_1024"];
     TTGCSocialFBImages *obj = [[TTGCSocialFBImages alloc] init];
-    obj.photos = @[image].mutableCopy;
+    obj.photoImage = image;
     [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
         if (success) {
         } else {
