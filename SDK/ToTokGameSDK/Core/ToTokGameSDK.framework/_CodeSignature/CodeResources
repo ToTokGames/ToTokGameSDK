@@ -62,11 +62,11 @@
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
-		10yvBeVX8v1GXLVNkFoN2Qp272g=
+		eOQl/1ss4eJMZ+roCnibqcjX17k=
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
-		AuVaIPFLnNUv9Tg7OQhbg57F1oI=
+		4oAqzdFyvuYN0e0dl1mbt3Ezyns=
 		</data>
 		<key>Headers/TTGCURLRequestSerialization.h</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		0oEFA18aeJbWccL+jJySZgFlANg=
+		n5l0JXSeptb7yw8vpSm31DldDlQ=
 		</data>
 		<key>Headers/ToTokGameManager.h</key>
 		<data>
-		B4gWwDOyB2Tm+TiZ8ior8VIm/+U=
+		BkCWg9RlcmQZGSV50uMMTRUqpL0=
 		</data>
 		<key>Headers/ToTokGameSDK.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p65cx2rOXEX5agZAbiBtlKYne5U=
+		dp+a8Pp5RhU/hsfep1FD7t94Qb0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -261,22 +261,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			10yvBeVX8v1GXLVNkFoN2Qp272g=
+			eOQl/1ss4eJMZ+roCnibqcjX17k=
 			</data>
 			<key>hash2</key>
 			<data>
-			wpz9NoGMWumf1HXpILe6tT1p58pT0VF/97JSZmSijH0=
+			mqqvC8FHUuwh35+g/J9vXtrFgdx4++Nuu9CrOD/5re0=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AuVaIPFLnNUv9Tg7OQhbg57F1oI=
+			4oAqzdFyvuYN0e0dl1mbt3Ezyns=
 			</data>
 			<key>hash2</key>
 			<data>
-			jxDadPPoF+T04Ri0WBGP3nsA9EzSC0L5pLkRxaJpB7w=
+			6eF7TibASfLheYJFhandpSPU57kK15jWaNPEpcoiNOI=
 			</data>
 		</dict>
 		<key>Headers/TTGCURLRequestSerialization.h</key>
@@ -316,22 +316,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0oEFA18aeJbWccL+jJySZgFlANg=
+			n5l0JXSeptb7yw8vpSm31DldDlQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0XYYdc/UWqADU+78gBljTFYIjSNbqWXrnJhf4EbWi+I=
+			qqdDkRjHCaCGpXxnlQ/dHOIy5ZEQlta5uHsbkfXMGSM=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B4gWwDOyB2Tm+TiZ8ior8VIm/+U=
+			BkCWg9RlcmQZGSV50uMMTRUqpL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TvZwJtwAl/Cg2Vd4aAiD8x3VuCfv75yghQtNcFLe0gg=
+			FE9OEMiJ+bgIGNEfgsuxkZoXow2hYIfg826FHSfnCY4=
 			</data>
 		</dict>
 		<key>Headers/ToTokGameSDK.h</key>

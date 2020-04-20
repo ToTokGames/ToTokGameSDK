@@ -2,7 +2,7 @@
 
 **Function**
 
-- [x] Login （GameCenter & Facebook & Guest）
+- [x] Login （Apple & GameCenter & Facebook & Guest）
 - [x] Share （Facebook & WhatsApp） 
 - [x] In-App Purchase
 - [x] Push Notifications

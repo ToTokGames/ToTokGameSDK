@@ -120,6 +120,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)ttgc_setAnalyticsUser;
 
+- (void)ttgcLog_eventPaymentInfoValue:(NSNumber *)value currency:(NSString *)currency payType:(NSString *)type;
+
 
 @end
 
