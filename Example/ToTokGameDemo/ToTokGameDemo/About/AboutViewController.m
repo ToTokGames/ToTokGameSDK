@@ -33,15 +33,10 @@
 }
 
 - (IBAction)agreement:(id)sender {
-    NSString *urlString = [[ToTokGameManager defaultManager] getAgreementUrlString];
-    webtitle = @"Agreement";
-    [self openWebView:urlString];
+    [[ToTokGameManager defaultManager] showAgreementView];
 }
 
 - (IBAction)privicy:(id)sender {
-    NSString *urlString = [[ToTokGameManager defaultManager] getPrivacyUrlString];
-    webtitle = @"Privicy";
-    [self openWebView:urlString];
 }
 
 - (IBAction)home:(id)sender {

@@ -28,10 +28,7 @@
     NSString *appId = @"LTAIe4EmdMyxioiR";
     NSString *appSecret = @"d96b2c8baa2a1bf6671ad29cfd3fb566";
     NSString *gameid = @"126847495400849409";
-    [[ToTokGameManager defaultManager] setupWithAppId:appId Secret:appSecret GameId:gameid Application:application Options:launchOptions AnimationHandle:^(BOOL isFinish) {
-        //启动动画完成 可以这里添加启动自己的页面
-        
-    }];
+    [[ToTokGameManager defaultManager] setupWithAppId:appId Secret:appSecret GameId:gameid Application:application Options:launchOptions];
                 
     return YES;
 }

@@ -35,7 +35,7 @@
 - (void)setupUI {
     NSString *domain = [[ToTokGameManager defaultManager] SDKServerDomain];
     self.domainString.text = domain;
-    if ([domain containsString:@"team"]) {
+    if ([domain containsString:@"t-"]) {
         self.domainStatus.text = @"test";
     } else {
         self.domainStatus.text = @"pro";

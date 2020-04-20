@@ -39,6 +39,18 @@
     [self buy:@"ttgc_gold_coin_3"];
 }
 
+- (IBAction)buy4:(id)sender {
+    [self buy:@"ttgc_gold_coin_4"];
+}
+
+- (IBAction)buy5:(id)sender {
+    [self buy:@"ttgc_gold_coin_5"];
+}
+
+- (IBAction)buy6:(id)sender {
+    [self buy:@"ttgc_gold_coin_6"];
+}
+
 - (void)buy:(NSString *)sku {
     TTGCHUD_NO_Stop(@"pay...")
     [[ToTokGameManager defaultManager] buyProductWithSKU:sku Progress:^(TTGCOderStatus orderStatus) {

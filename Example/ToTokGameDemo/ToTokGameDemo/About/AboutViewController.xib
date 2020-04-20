@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -96,30 +96,30 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-ka-BKR">
-                    <rect key="frame" x="0.0" y="144" width="414" height="60"/>
+                    <rect key="frame" x="0.0" y="144" width="414" height="0.0"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="open privicy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-5d-Cvm">
-                            <rect key="frame" x="12" y="20.5" width="88.5" height="19.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-5d-Cvm">
+                            <rect key="frame" x="12" y="0.0" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-TZ-cFV">
-                            <rect key="frame" x="376" y="12.5" width="26" height="35"/>
+                            <rect key="frame" x="376" y="-17.5" width="26" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="GVi-R9-Z0r"/>
                                 <constraint firstAttribute="width" constant="26" id="OAr-TR-dbu"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54N-g2-MGr">
-                            <rect key="frame" x="8" y="59.5" width="398" height="0.5"/>
+                            <rect key="frame" x="8" y="-0.5" width="398" height="0.5"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="0.5" id="t6A-Kw-Knm"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-hj-WRa">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                             <connections>
                                 <action selector="privicy:" destination="-1" eventType="touchUpInside" id="NGf-Uk-Ds7"/>
                             </connections>
@@ -131,7 +131,7 @@
                         <constraint firstItem="i0h-TZ-cFV" firstAttribute="centerY" secondItem="HNV-ka-BKR" secondAttribute="centerY" id="283-e9-QMq"/>
                         <constraint firstAttribute="trailing" secondItem="ytq-hj-WRa" secondAttribute="trailing" id="2gx-Cl-ia8"/>
                         <constraint firstAttribute="bottom" secondItem="ytq-hj-WRa" secondAttribute="bottom" id="5QH-1y-Lh2"/>
-                        <constraint firstAttribute="height" constant="60" id="6F3-92-UBh"/>
+                        <constraint firstAttribute="height" id="6F3-92-UBh"/>
                         <constraint firstAttribute="trailing" secondItem="54N-g2-MGr" secondAttribute="trailing" constant="8" id="6UM-xh-hFr"/>
                         <constraint firstItem="ytq-hj-WRa" firstAttribute="top" secondItem="HNV-ka-BKR" secondAttribute="top" id="G4Z-UE-0Id"/>
                         <constraint firstItem="54N-g2-MGr" firstAttribute="leading" secondItem="HNV-ka-BKR" secondAttribute="leading" constant="8" id="GJZ-P1-sCc"/>
@@ -142,7 +142,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8q3-3i-l1Z">
-                    <rect key="frame" x="0.0" y="204" width="414" height="60"/>
+                    <rect key="frame" x="0.0" y="144" width="414" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="open homepage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-D7-RDV">
                             <rect key="frame" x="12" y="20.5" width="118" height="19.5"/>
@@ -188,7 +188,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w16-8l-lFD">
-                    <rect key="frame" x="0.0" y="264" width="414" height="60"/>
+                    <rect key="frame" x="0.0" y="204" width="414" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cP-ec-nGm">
                             <rect key="frame" x="12" y="20.5" width="52.5" height="19.5"/>

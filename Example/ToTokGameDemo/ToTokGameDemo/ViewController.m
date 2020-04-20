@@ -17,6 +17,7 @@
 #import "PayViewController.h"
 #import "ShareViewController.h"
 #import "AboutViewController.h"
+#import "LoginViewController.h"
 
 #import "DCLog.h"
 
@@ -42,26 +43,12 @@
 @implementation ViewController
 {
     UIDeviceOrientation currentOrientation;
-    
-    UIView *loginbgView;
-    UIView *loginView;
-    UILabel *titileLabel;
-    UIButton *guestButton;
-    UIButton *gamecenterButton;
-    UIButton *facebookButton;
-    
-    NSString *webtitle;
-    
     TTGCUserModel *userModel;
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onDeviceOrientationDidChange)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
-    
     [self setupUI];
     [[ToTokGameManager defaultManager] setPayEnvironmentTest];
     [self showLoginView];
@@ -93,14 +80,15 @@
     self.photoImageView.clipsToBounds = YES;
     self.logButton.layer.cornerRadius = 4.0;
     self.logoutButton.layer.cornerRadius = 5.0;
+    self.logButton.hidden = YES;
 }
 
 - (void)showLoginView {
     if ([[ToTokGameManager defaultManager] loginType] == TTGCLoginType_unloggedIn) {
         //unlogged in and show login UI
-        [self backgroundUI];
-        [self loginView];
-        [self.view bringSubviewToFront:self.logButton];
+        LoginViewController *vc = [[LoginViewController alloc] init];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:vc animated:NO completion:nil];
     } else {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self getUserInfo];
@@ -108,95 +96,10 @@
     }
 }
 
-- (void)backgroundUI {
-    loginbgView = [[UIView alloc] initWithFrame:self.view.bounds];
-    loginbgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:login_bg_alpha];
-    [self.view addSubview:loginbgView];
-}
-
-- (void)loginView {
-    loginView = [[UIView alloc] init];
-    loginView.backgroundColor = [self colorWithHexString:loginview_bg_color];
-    loginView.layer.cornerRadius = 4.0;
-    [loginbgView addSubview:loginView];
-    
-    NSString *titileString= @"Login";
-    
-    titileLabel = [[UILabel alloc] init];
-    titileLabel.text = titileString;
-    [loginView addSubview:titileLabel];
-    
-    [self loginButton];
-    
-    [self freshFrame];
-}
-
-- (void)loginButton {
-    guestButton = [[UIButton alloc] init];
-    gamecenterButton = [[UIButton alloc] init];
-    facebookButton = [[UIButton alloc] init];
-    
-    NSString *guest = @"Guest Login";
-    NSString *totok = @"Gamecenter Login";
-    NSString *facebook = @"Facebook Login";
-    [guestButton setTitle:guest forState:UIControlStateNormal];
-    [guestButton addTarget:self action:@selector(guestLogin) forControlEvents:UIControlEventTouchUpInside];
-    [gamecenterButton setTitle:totok forState:UIControlStateNormal];
-    [gamecenterButton addTarget:self action:@selector(gamecenterLogin) forControlEvents:UIControlEventTouchUpInside];
-    [facebookButton setTitle:facebook forState:UIControlStateNormal];
-    [facebookButton addTarget:self action:@selector(facebookLogin) forControlEvents:UIControlEventTouchUpInside];
-    [self buttonStyle:guestButton];
-    [self buttonStyle:gamecenterButton];
-    [self buttonStyle:facebookButton];
-    
-    [loginView addSubview:guestButton];
-    [loginView addSubview:gamecenterButton];
-    [loginView addSubview:facebookButton];
-    
-}
-
 - (void)buttonStyle: (UIButton *)button {
     [button setBackgroundColor:[self colorWithHexString:loginbutton_bg_color]];
     [button setTitleColor:[self colorWithHexString:loginbutton_titile_color] forState:UIControlStateNormal];
     button.layer.cornerRadius = 4.0;
-}
-
-- (void)freshFrame {
-    loginbgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    CGFloat padding = 20;
-    CGFloat ratio = 0.725;
-    CGFloat width = SCREEN_WIDTH-2*padding;
-    CGFloat height = width/ratio;
-    if (!IsPortrait) {
-        width = SCREEN_HEIGHT-2*padding;
-        height = width*ratio;
-    }
-    CGFloat x = (SCREEN_WIDTH-width)/2.0;
-    CGFloat y = (SCREEN_HEIGHT-height)/2.0;
-    CGFloat H = 100;
-    [loginView setFrame:CGRectMake(x, y, width, height)];
-    [titileLabel sizeToFit];
-    titileLabel.center = CGPointMake(width/2.0, 20);
-    [guestButton setFrame:CGRectMake(0, 0, width/2.0, 35)];
-    guestButton.center = CGPointMake(width/2.0, height/4.0);
-    [gamecenterButton setFrame:CGRectMake(0, 0, width/2.0, 35)];
-    gamecenterButton.center = CGPointMake(width/2.0, guestButton.frame.origin.y+H);
-    [facebookButton setFrame:CGRectMake(0, 0, width/2.0, 35)];
-    facebookButton.center = CGPointMake(width/2.0, gamecenterButton.frame.origin.y+H);
-}
-
-- (void)onDeviceOrientationDidChange {
-    UIDevice *device = [UIDevice currentDevice];
-    if (device.orientation == UIDeviceOrientationPortrait ||
-        device.orientation == UIDeviceOrientationLandscapeLeft ||
-        device.orientation == UIDeviceOrientationLandscapeRight) {
-        if (currentOrientation) {
-            if ([self isFreshFrameWithOrientation:device.orientation]) {
-                [self freshFrame];
-            }
-        }
-        currentOrientation = device.orientation;
-    }
 }
 
 - (BOOL)isFreshFrameWithOrientation:(UIDeviceOrientation)orientation {
@@ -239,51 +142,6 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)guestLogin {
-    TTGCHUD_NO_Stop(@"login...")
-    __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] guestLoginCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
-        if (!error) {
-            //登录成功
-            TTGCHUD_SUCCESS(@"success")
-            [weakSelf closeLoginView];
-        } else {
-            //查看error信息
-            TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
-        }
-    }];
-}
-
-- (void)gamecenterLogin {
-    TTGCHUD_NO_Stop(@"login...")
-    __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] loginWithGameCenterCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
-        if (!error) {
-            //登录成功
-            TTGCHUD_SUCCESS(@"success")
-            [weakSelf closeLoginView];
-        } else {
-            //查看error信息
-            TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
-        }
-    }];
-}
-
-- (void)facebookLogin {
-    TTGCHUD_NO_Stop(@"login...")
-    __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] loginWithFacebookCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
-        if (!error) {
-            //登录成功
-            TTGCHUD_SUCCESS(@"success")
-            [weakSelf closeLoginView];
-        } else {
-            //查看error信息
-            TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
-        }
-    }];
-}
-
 - (void)getUserInfo {
     TTGCHUD_NO_Stop(@"loading...")
     [[ToTokGameManager defaultManager] userInfoCompletion:^(id  _Nullable userInfo, NSError * _Nullable error) {
@@ -320,6 +178,8 @@
         self.acountType.text = @"Facebook";
     } else if (model.userType == TTGCLoginType_Guest) {
         self.acountType.text = @"Guest";
+    } else if (model.userType == TTGCLoginType_Apple) {
+        self.acountType.text = @"Apple";
     } else {
         self.acountType.text = @"Unknow";
     }
@@ -327,7 +187,6 @@
 }
 
 - (void)closeLoginView {
-    [loginbgView removeFromSuperview];
     [self getUserInfo];
 }
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  用户类型
+ *  User Type
  */
 typedef NS_ENUM(NSInteger, TTGCLoginType) {
     TTGCLoginType_unloggedIn       = 0,             // unlogin
@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, TTGCLoginType) {
     TTGCLoginType_GameCenter       = 2,             // GameCenter user
     TTGCLoginType_Facebook         = 3,             // Facebook user
     TTGCLoginType_Guest            = 4,             // Guest user
+    TTGCLoginType_Apple            = 5,             // Apple user
 };
 
 NS_ASSUME_NONNULL_BEGIN

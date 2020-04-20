@@ -41,6 +41,10 @@ typedef NS_ENUM(NSInteger, TTGCShareContentType) {
 typedef NS_ENUM(NSInteger, TTGCShareTemplate) {
     TTGCShareTemplate_Default        = 1,             // the link of game page
     TTGCShareTemplate_Invite         = 2,             // invite link
+    
+    //The following content is not open yet
+    TTGCShareTemplate_Notice         = 3,             // notice link
+    TTGCShareTemplate_Showoff        = 4,             // showoff link
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -170,7 +174,7 @@ If specified, the quote text will render with custom styling on top of the link.
 // WhatsApp Image Model
 @interface TTGCSocialWAImages : NSObject
 
-@property (nonatomic, copy) NSArray *photos; // share images array（NSData、PHAsset、NSURL）
+@property (nonatomic, copy) NSArray *photos; // share images array（UIImage、NSData、PHAsset、NSURL）
 
 @end
 
