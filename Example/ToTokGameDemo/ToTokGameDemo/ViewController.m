@@ -21,12 +21,6 @@
 
 #import "DCLog.h"
 
-//UI配置
-#define login_bg_alpha 0.6
-#define loginview_bg_color @"#53ceca"
-#define loginbutton_bg_color @"#42455c"
-#define loginbutton_titile_color @"#ffffff"
-
 
 @interface ViewController ()
 
@@ -45,7 +39,6 @@
     UIDeviceOrientation currentOrientation;
     TTGCUserModel *userModel;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -96,12 +89,6 @@
     }
 }
 
-- (void)buttonStyle: (UIButton *)button {
-    [button setBackgroundColor:[self colorWithHexString:loginbutton_bg_color]];
-    [button setTitleColor:[self colorWithHexString:loginbutton_titile_color] forState:UIControlStateNormal];
-    button.layer.cornerRadius = 4.0;
-}
-
 - (BOOL)isFreshFrameWithOrientation:(UIDeviceOrientation)orientation {
     if ((currentOrientation == UIDeviceOrientationPortrait) && (orientation != UIDeviceOrientationPortrait)) {
         return YES;
@@ -150,7 +137,7 @@
             self->userModel = userInfo;
             [self freshUserInfo:self->userModel];
         } else {
-            //查看error信息
+            //error info
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];

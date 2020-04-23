@@ -47,11 +47,11 @@
     __weak __typeof(self)weakSelf = self;
     [[ToTokGameManager defaultManager] loginWithAppleCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
-            //登录成功
+            //login success
             TTGCHUD_SUCCESS(@"success")
             [weakSelf closeLoginView];
         } else {
-            //查看error信息
+            //error info
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];
@@ -62,11 +62,11 @@
     __weak __typeof(self)weakSelf = self;
     [[ToTokGameManager defaultManager] loginWithGameCenterCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
-            //登录成功
+            //login success
             TTGCHUD_SUCCESS(@"success")
             [weakSelf closeLoginView];
         } else {
-            //查看error信息
+            //error info
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];
@@ -77,11 +77,11 @@
     __weak __typeof(self)weakSelf = self;
     [[ToTokGameManager defaultManager] loginWithFacebookCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
-            //登录成功
+            //login success
             TTGCHUD_SUCCESS(@"success")
             [weakSelf closeLoginView];
         } else {
-            //查看error信息
+            //error info
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];
@@ -92,11 +92,11 @@
     __weak __typeof(self)weakSelf = self;
     [[ToTokGameManager defaultManager] guestLoginCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
-            //登录成功
+            //login success
             TTGCHUD_SUCCESS(@"success")
             [weakSelf closeLoginView];
         } else {
-            //查看error信息
+            //error info
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];

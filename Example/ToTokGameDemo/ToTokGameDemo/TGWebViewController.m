@@ -72,12 +72,10 @@
     [self.view addSubview:self.webView];
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     
-    // 进度条
     UIView * progress = [[UIView alloc] initWithFrame:CGRectMake(0, Nav_StatusBar_Height, SCREEN_WIDTH, 2)];
     progress.backgroundColor = [UIColor clearColor];
     [self.view addSubview:progress];
     
-    // 隐式动画
     CALayer *layer = [CALayer layer];
     layer.frame = CGRectMake(0, 0, 0, 2);
     layer.backgroundColor = [UIColor blueColor].CGColor;
@@ -105,51 +103,34 @@
 }
 
 
-// 页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didStart：%@",urlStr);
+   
 }
 
-// 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didFail：%@",urlStr);
-}
-
-// 当内容开始返回时调用
-- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didCommit：%@",urlStr);
-}
-
-// 页面加载完成之后调用
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didFinish：%@",urlStr);
-}
-
-//提交发生错误时调用
-- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didFail：%@",urlStr);
-}
-
-// 接收到服务器跳转请求即服务重定向时之后调用
-- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation {
-    NSString * urlStr = webView.URL.absoluteString;
-    NSLog(@"-------didReceiveServerRedirect：%@",urlStr);
-}
-
-// 根据WebView对于即将跳转的HTTP请求头信息和相关信息来决定是否跳转
-- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     
-    NSString * urlStr = navigationAction.request.URL.absoluteString;
-    NSLog(@"-------decidePolicy：%@",urlStr);
+}
+
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
+    
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    
+}
+
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    
+}
+
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation {
+    
+}
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
-//进程被终止时调用
 - (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView{
 }
 

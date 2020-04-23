@@ -192,10 +192,10 @@
 		21FD5E8D243CC32A000989C2 /* DCLog */ = {
 			isa = PBXGroup;
 			children = (
-				21FD5E8E243CC32A000989C2 /* DCLogView.h */,
 				21FD5E8F243CC32A000989C2 /* DCLog.h */,
-				21FD5E90243CC32A000989C2 /* DCLogView.m */,
 				21FD5E91243CC32A000989C2 /* DCLog.m */,
+				21FD5E8E243CC32A000989C2 /* DCLogView.h */,
+				21FD5E90243CC32A000989C2 /* DCLogView.m */,
 			);
 			path = DCLog;
 			sourceTree = "<group>";

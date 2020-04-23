@@ -54,13 +54,13 @@
 - (void)buy:(NSString *)sku {
     TTGCHUD_NO_Stop(@"pay...")
     [[ToTokGameManager defaultManager] buyProductWithSKU:sku Progress:^(TTGCOderStatus orderStatus) {
-        NSLog(@"订单状态：%ld",(long)orderStatus);
+        NSLog(@"Order Status ：%ld",(long)orderStatus);
     } Completion:^(id  _Nullable orderInfo, NSError * _Nullable error) {
         if (orderInfo) {
             TTGCHUD_SUCCESS(@"success")
         }
         if (error) {
-            NSLog(@"支付错误%@",error.userInfo);
+            NSLog(@"pay error : %@",error.userInfo);
             TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
         }
     }];
