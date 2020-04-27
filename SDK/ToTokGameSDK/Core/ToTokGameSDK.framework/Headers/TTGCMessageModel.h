@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TTGCMessageModel : NSObject
 
-@property (nonatomic, copy) NSString *ttkUid; //好友的totok 用户id或者群组id
-@property (nonatomic, copy) NSString *templateId; //消息模板id
-@property (nonatomic, copy) NSString *message;//消息内容 TODO
+@property (nonatomic, copy) NSString *ttkUid; // User ID of a friends or group ID
+@property (nonatomic, copy) NSString *templateId; // Template of message ID
+@property (nonatomic, copy) NSString *message;// Content of message TODO
 
 @end
 

@@ -44,30 +44,30 @@
  *  TTGCHUD 隐藏
  *
  */
-#define TTGCHUD_Stop [TTGCProgressHUD dismiss];
+#define TTGCHUD_Stop dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD dismiss];});
 
 /**
  *  TTGCHUD 请求失败
  */
-#define TTGCHUD_HTTP_ERROR(msg) [TTGCProgressHUD showErrorWithStatus:msg?msg:@"Faild"];
+#define TTGCHUD_HTTP_ERROR(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showErrorWithStatus:msg?msg:@"Faild"];});
 
 /**
  *  TTGCHUD 请求成功
  */
-#define TTGCHUD_HTTP_SUCCESS(msg) [TTGCProgressHUD showSuccessWithStatus:msg?msg:@"Success"];
+#define TTGCHUD_HTTP_SUCCESS(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showSuccessWithStatus:msg?msg:@"Success"];});
 
 /**
  *  TTGCHUD 提示
  */
-#define TTGCHUD_HINT(msg) [TTGCProgressHUD showInfoWithStatus:msg];
+#define TTGCHUD_HINT(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showInfoWithStatus:msg];});
 
 /**
  *  TTGCHUD 请求失败
  */
-#define TTGCHUD_ERROR(msg) [TTGCProgressHUD showErrorWithStatus:msg];
+#define TTGCHUD_ERROR(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showErrorWithStatus:msg];});
 
 /**
  *  TTGCHUD 请求成功
  */
-#define TTGCHUD_SUCCESS(msg) [TTGCProgressHUD showSuccessWithStatus:msg];
+#define TTGCHUD_SUCCESS(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showSuccessWithStatus:msg];});
 

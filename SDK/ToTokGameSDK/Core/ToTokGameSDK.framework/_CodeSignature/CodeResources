@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/TTGCMessageModel.h</key>
 		<data>
-		v1luVo/ojPpF4n7Y0BW0oCM7kHA=
+		DNJlaPGMCpvb9Oh6rBVMa4iYp4o=
 		</data>
 		<key>Headers/TTGCNetWorkManager.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TTGCProgressHUDDefine.h</key>
 		<data>
-		I3llNGSKmUZpGkjNn0BwF1TQkPo=
+		+QPfRp5raGFwbDz9nRmz3bQu6/k=
 		</data>
 		<key>Headers/TTGCSecurityPolicy.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/TTGCSocialHandler.h</key>
 		<data>
-		PbgOidLYy8AknLj7oluii1xEXQ4=
+		VZpXzWxGm21g7qKr2WW8so/Pbm8=
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
-		4oAqzdFyvuYN0e0dl1mbt3Ezyns=
+		bKHNU0vat8IwsD3gf9RmJ+k9ab0=
 		</data>
 		<key>Headers/TTGCURLRequestSerialization.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dp+a8Pp5RhU/hsfep1FD7t94Qb0=
+		B1WnGPHbwJm06M5P6IyoUSjOciM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v1luVo/ojPpF4n7Y0BW0oCM7kHA=
+			DNJlaPGMCpvb9Oh6rBVMa4iYp4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZSzmhxr15DUMRITS3uoblLHWfYhpJ+K8/MWtY2taTxU=
+			0LyNLxAtRDvH+PfF1UXJKwiY++ltu32rk8zz8/o+iWE=
 			</data>
 		</dict>
 		<key>Headers/TTGCNetWorkManager.h</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I3llNGSKmUZpGkjNn0BwF1TQkPo=
+			+QPfRp5raGFwbDz9nRmz3bQu6/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			ujiy8qbtqHviPh367sb557rJ3YOsSTyLIrSqWSARiw0=
+			QA7EWiWXKOo75c/hIqIDtVhmFjrG49Fk1lwN7deyfgk=
 			</data>
 		</dict>
 		<key>Headers/TTGCSecurityPolicy.h</key>
@@ -250,11 +250,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PbgOidLYy8AknLj7oluii1xEXQ4=
+			VZpXzWxGm21g7qKr2WW8so/Pbm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			FfSyZj2RSN9RDvtd+VcuePb8oGA5j2aIzy9ZRnn9nAs=
+			SN9ZvReBBpQt5fFxxAxNQMpQCYl75zNtevFmdF8WjYo=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialMessageObject.h</key>
@@ -272,11 +272,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4oAqzdFyvuYN0e0dl1mbt3Ezyns=
+			bKHNU0vat8IwsD3gf9RmJ+k9ab0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6eF7TibASfLheYJFhandpSPU57kK15jWaNPEpcoiNOI=
+			irniDSoOXxnecZHcj+uiakuDOzJOLLPMhlfO2LwqIfw=
 			</data>
 		</dict>
 		<key>Headers/TTGCURLRequestSerialization.h</key>

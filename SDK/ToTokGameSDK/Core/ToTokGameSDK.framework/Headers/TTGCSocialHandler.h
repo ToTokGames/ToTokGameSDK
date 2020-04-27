@@ -15,22 +15,29 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TTGCSocialHandler : NSObject <TTGCSocialPlatformProvider>
 
 /**
-*  实现所有平台的基类
+*  Implementation of base classes for all platforms
+*
 *  @discuss
-*  前提条件:需要在主工程配置 other link flag -ObjC
-*  所有实现TTGCSocialHandler对应平台类型子类，需要重写如下方法：
-*  1.+(NSArray*) socialPlatformTypes; 返回对应平台的类型的数组，此处用数组是为了在微信和qq的平台是可以有不同的平台类型（微信，朋友圈等）与统一handler公用
-*  2.重写load函数：
-*  代码示例：
+*  Prerequisites: need to be configured in the main project other link flag -ObjC
+*  All implementations of TTGCSocialHandler corresponding to the platform type subclasses need to rewrite the following methods:
+*
+*  1.+(NSArray*) socialPlatformTypes;
+*  Returns an array of corresponding platform types.
+*  The array is used here to allow different platform types (WeChat, etc.) to be shared with the unified handler on WeChat and qq platforms.
+*
+*  2.Rewrite the load function:
+*  Example code:
 *   +(void)load
 *   {
-*       [super load];//必须调用
+*       [super load];//must call
 *   }
 *
-*  重载后保证调用基类的[UMSocialHandler load]
-*  3.重写defaultManager单例类方法，保证运行时能找到defaultManager来获得当前的单例方法,保证其唯一性。
+*  Guaranteed to call the base class [TTGCSocialHandler load] after overloading
+*
+*  3.Rewrite the defaultManager single instance method to ensure that the defaultManager can be found at runtime to get the current single instance method, ensuring its uniqueness.
 */
-#pragma mark - 子类需要重载的类
+#pragma mark - Subclasses that need to be overloaded
+
 + (void)load;
 
 + (NSArray*)socialPlatformTypes;

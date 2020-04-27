@@ -17,17 +17,17 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 /**
- *  初始化平台
+ *  Initialization platform
  *
- *  @param launchOptions       第三方平台的appKey
+ *  @param launchOptions       AppKey for third-party platforms
  */
 - (BOOL)ttgcSocial_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 /**
- *  设置平台的appkey
+ *  Setting platform appkey
  *
- *  @param appKey       第三方平台的appKey
- *  @param appSecret    第三方平台的appSecret
+ *  @param appKey       appKey for third-party platforms
+ *  @param appSecret    appSecret for third-party platforms
  *  @param redirectURL  redirectURL
  */
 - (BOOL)ttgcSocial_setAppKey:(NSString *)appKey
@@ -35,71 +35,71 @@ NS_ASSUME_NONNULL_BEGIN
                  redirectURL:(NSString *)redirectURL;
 
 /**
- *  授权
+ *  Authorize
  *
- *  @param userInfo          用户的授权的自定义数据
- *  @param completionHandler 授权后的回调
- *  @discuss userInfo在有些平台可以带入，如果没有就传入nil.
+ *  @param userInfo          Customized data for user authorization
+ *  @param completionHandler Callback after authorization
+ *  @discuss userInfo        In some platforms it can be brought in, if not it passes into nil.
  */
 -(void)ttgcSocial_AuthorizeWithUserInfo:(NSDictionary *)userInfo
                 withCompletionHandler:(TTGCSocialPlateLoginCompletionHandler)completionHandler;
 
 /**
- *  取消授权
+ *  De-authorization
  *
- *  @param completionHandler 取消授权后的回调
- *  @discuss userInfo在有些平台可以带入，如果没有就传入nil.
+ *  @param completionHandler Callback after deauthorization
+ *  @discuss userInfo        In some platforms it can be brought in, if not it passes into nil.
  */
 -(void)ttgcSocial_cancelAuthWithCompletionHandler:(TTGCSocialPlateLogoutCompletionHandler)completionHandler;
 
 
 /**
- *  设置分享平台
+ *  Setting share platform
  *
- *  @param messageObject  分享的content @see TTGCMessageObject
- *  @param completion   回调
+ *  @param messageObject  share content @see TTGCMessageObject
+ *  @param completion     callback
  */
 - (void)ttgcSocial_shareMessageObject:(TTGCSocialMessageObject *)messageObject
                            completion:(TTGCShareCompleteHandler)completion;
 
 
 /**
- *  获得从sso或者web端回调到本app的回调
+ *  Get callback from sso or web to this app
  *
- *  @param url               第三方sdk的打开本app的回调的url
- *  @param sourceApplication 回调的源程序
+ *  @param url               The URL of the callback of the third-party SDK to open this app
+ *  @param sourceApplication Callback source application
  *  @param annotation        annotation
  *
- *  @return 是否处理  YES代表处理成功，NO代表不处理
+ *  @return  YES Success，NO Not deal with
  *
  */
 - (BOOL)ttgcSocial_application:(UIApplication *)application OpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 - (BOOL)ttgcSocial_application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
-//通用（备用）
+//General (standby)
 - (BOOL)ttgcSocial_handleOpenURL:(NSURL *)url options:(NSDictionary*)options;
 
 #pragma mark - Universal Link
 - (BOOL)ttgc_application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
 
 /**
- *  平台是否安装
+ *  Platform installed or not
  *
- *  @return YES 代表安装，NO 代表未安装
+ *  @return YES installed，NO uninstalled
  */
 - (BOOL)ttgcSocial_isInstall;
 
 /**
- *  当前平台是否支持分享
+ *  Current platform support sharing
  *
- *  @return YES代表支持，NO代表不支持
+ *  @return YES support，NO unsupported
  */
 - (BOOL)ttgcSocial_isSupport;
 
 /**
- *  当前平台token是否有效
+ *  Whether the platform token is valid
  *
- *  @return YES代表有效，NO代表无效
+ *  @return YES valid，NO invalid
 */
 - (BOOL)ttgcSocial_isCurrentAccessTokenActive;
 
@@ -108,7 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Show Facebook friends and send game invitations.
  *
  *  @param messageObject  message content @see TTGCMessageObject
- *  @param completion   回调
+ *  @param completion     callback
  *
 */
 - (void)ttgcSocial_showFBFriendsSendInvitations:(TTGCSocialMessageObject *)messageObject
@@ -118,6 +118,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)ttgcLog_eventShareWithTarget:(NSString *)target shareType:(NSString *)type;
 
+- (void)ttgcLog_eventLogin;
 - (void)ttgc_setAnalyticsUser;
 
 - (void)ttgcLog_eventPaymentInfoValue:(NSNumber *)value currency:(NSString *)currency payType:(NSString *)type;

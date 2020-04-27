@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ToTokGameSDK"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "ToTokGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/ToTokGames/ToTokGameSDK-iOS.git", :tag => "1.0.5" }
+  spec.source       = { :git => "https://github.com/ToTokGames/ToTokGameSDK-iOS.git", :tag => "1.0.6" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -36,9 +36,9 @@ Pod::Spec.new do |spec|
       fb.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
       fb.vendored_library = 'SDK/ToTokGameSDK/SocialLibraries/Facebook/libTTGCSocialFacebook.a'
       fb.vendored_framework = 'SDK/ToTokGameSDK/Core/ToTokGameSDK.framework'
-      fb.dependency 'FBSDKCoreKit', '~> 5.13.1'
-      fb.dependency 'FBSDKLoginKit', '~> 5.13.1'
-      fb.dependency 'FBSDKShareKit', '~> 5.13.1'
+      fb.dependency 'FBSDKCoreKit', '~> 6.5.1'
+      fb.dependency 'FBSDKLoginKit', '~> 6.5.1'
+      fb.dependency 'FBSDKShareKit', '~> 6.5.1'
       fb.resources = 'SDK/ToTokGameSDK/Core/ToTokGame.bundle','SDK/ToTokGameSDK/Core/TTGCProgressHUD.bundle'
   end
   
