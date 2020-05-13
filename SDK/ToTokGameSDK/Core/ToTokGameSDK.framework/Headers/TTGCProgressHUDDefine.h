@@ -13,9 +13,9 @@
 #pragma mark - TTGCProgressHUD
 
 /**
-*  TTGCHUD 初始设置
-*
-*/
+ *  TTGCHUD default setting
+ *
+ */
 #define SETUP_TTGCHUD   {\
 [TTGCProgressHUD setMinimumDismissTimeInterval:1.5];\
 [TTGCProgressHUD setDefaultStyle:TTGCProgressHUDStyleCustom];\
@@ -24,7 +24,7 @@
 }
 
 /**
- *  TTGCHUD 展示 默认隐藏
+ *  TTGCHUD show (Hidden by default)
  *
  */
 #define TTGCHUD_Normal(meg)   {\
@@ -33,7 +33,7 @@
 }
 
 /**
- *  TTGCHUD 展示 默认不隐藏
+ *  TTGCHUD show (Not hidden by default)
  *
  */
 #define TTGCHUD_NO_Stop(meg) {\
@@ -41,33 +41,33 @@
 }
 
 /**
- *  TTGCHUD 隐藏
+ *  TTGCHUD hide
  *
  */
 #define TTGCHUD_Stop dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD dismiss];});
 
 /**
- *  TTGCHUD 请求失败
+ *  TTGCHUD request failed
  */
 #define TTGCHUD_HTTP_ERROR(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showErrorWithStatus:msg?msg:@"Faild"];});
 
 /**
- *  TTGCHUD 请求成功
+ *  TTGCHUD request success
  */
 #define TTGCHUD_HTTP_SUCCESS(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showSuccessWithStatus:msg?msg:@"Success"];});
 
 /**
- *  TTGCHUD 提示
+ *  TTGCHUD tips
  */
 #define TTGCHUD_HINT(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showInfoWithStatus:msg];});
 
 /**
- *  TTGCHUD 请求失败
+ *  TTGCHUD error message
  */
 #define TTGCHUD_ERROR(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showErrorWithStatus:msg];});
 
 /**
- *  TTGCHUD 请求成功
+ *  TTGCHUD success message
  */
 #define TTGCHUD_SUCCESS(msg) dispatch_async(dispatch_get_main_queue(), ^{[TTGCProgressHUD showSuccessWithStatus:msg];});
 
