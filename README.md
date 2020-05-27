@@ -19,5 +19,5 @@
 ToTokGameSDK is available through [CocoaPods](https://cocoapods.org).
 
 ```objc
-pod 'ToTokGameSDK'
+pod 'TTkGameSDK'
 ```
