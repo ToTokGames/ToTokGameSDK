@@ -32,7 +32,6 @@ Pod::Spec.new do |spec|
   spec.resources = 'SDK/TTkGameSDK/Core/TTkGame.bundle','SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle'
   
   spec.subspec 'Core' do |cr|
-      cr.source_files = 'SDK/TTkGameSDK/Core'
       cr.vendored_framework = 'SDK/TTkGameSDK/Core/TTkGameSDK.framework'
       cr.resources = 'SDK/TTkGameSDK/Core/TTkGame.bundle','SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle'
   end
