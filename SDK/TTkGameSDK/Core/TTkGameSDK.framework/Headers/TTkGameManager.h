@@ -221,11 +221,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getAgreementUrlString;
 
 /**
- Get homepage url
- */
-- (NSString *)getHomepageUrlString;
-
-/**
  Open Agreement View
  */
 - (void)showAgreementView;
