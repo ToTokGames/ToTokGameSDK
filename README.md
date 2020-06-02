@@ -66,8 +66,8 @@ If you don’t use Google Analytics
 pod 'TTkGameLite-Dynamic/Core'
 ```
 
-Doucument : [TTkGameSDK-Lite Installation (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/ToTokGameSDK%20Installation%20(iOS).pdf)
+Doucument : [TTkGameSDK-Lite Installation (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK-Lite/TTkGameSDK-Lite%20Installation%20(iOS).pdf)
 
 **Api**
 
-Doucument : [TTkGameSDK-Lite API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/ToTokGameSDK%20API%20Document%20(iOS).pdf)
+Doucument : [TTkGameSDK-Lite API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK-Lite/TTkGameSDK-Lite%20API%20Document%20(iOS).pdf)
