@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, TTGCLoginType) {
     TTGCLoginType_Facebook         = 3,             // Facebook user
     TTGCLoginType_Guest            = 4,             // Guest user
     TTGCLoginType_Apple            = 5,             // Apple user
+    TTGCLoginType_Twitter          = 6,             // Twitter user
 };
 
 NS_ASSUME_NONNULL_BEGIN
