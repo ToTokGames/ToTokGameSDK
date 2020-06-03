@@ -48,6 +48,20 @@ Facebook Login result information from FBSDKLoginManagerLoginResult
 @end
 
 
+/**
+Twitter Login result information from TWTRSession
+*/
+
+@interface TTGCTwitterLoginParaModel : NSObject
+
+@property (nonatomic, copy) NSString *authToken; // The authorization token.
+@property (nonatomic, copy) NSString *authTokenSecret; // The authorization token secret.
+@property (nonatomic, copy) NSString *userName; // The username associated with the access token.
+@property (nonatomic, copy) NSString *userID; // The user ID associated with the access token.
+
+@end
+
+
 
 /**
 appleIDCredential information from Apple protocol ASAuthorizationControllerDelegate
