@@ -24,9 +24,7 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
   spec.libraries = 'sqlite3'
   spec.frameworks = 'UIKit', 'StoreKit', 'GameKit', 'WebKit', 'UserNotifications', 'Photos', 'ImageIO', 'Foundation', 'CoreFoundation', 'QuartzCore', 'CoreGraphics', 'AVFoundation', 'CoreTelephony', 'Security', 'AuthenticationServices'
-  
-  spec.default_subspec = 'Core'
-  
+    
   spec.subspec 'Core' do |cr|
       cr.vendored_framework = 'SDK/TTkGameLite/Core/TTkGameSDK.framework'
       cr.resource = 'SDK/TTkGameLite/Core/TTkGame.bundle'
