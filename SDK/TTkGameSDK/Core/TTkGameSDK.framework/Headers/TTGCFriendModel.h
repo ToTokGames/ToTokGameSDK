@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TTGCFriendModel : NSObject
 
 @property (nonatomic, copy) NSString *ttkUid; //ttk uid，or groupid eg. 802..
-@property (nonatomic, copy) NSString *ttkId; //ttkID
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *photoUrl;
 

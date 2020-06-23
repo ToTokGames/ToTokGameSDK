@@ -20,5 +20,4 @@ FOUNDATION_EXPORT const unsigned char TTkGameSDKVersionString[];
 #import <TTkGameSDK/TTGCSocialHandler.h>
 #import <TTkGameSDK/TTGCProgressHUDDefine.h>
 #import <TTkGameSDK/TTGCProgressHUD.h>
-#import <TTkGameSDK/TTGCNetWorkManager.h>
 

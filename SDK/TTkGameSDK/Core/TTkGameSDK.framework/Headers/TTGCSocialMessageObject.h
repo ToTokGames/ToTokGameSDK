@@ -178,5 +178,25 @@ If specified, the quote text will render with custom styling on top of the link.
 
 @end
 
+// ttk invite model
+@interface TTGCSocialTTkInvite : NSObject
+
+@property (nonatomic, copy) NSString *ttkUid;
+@property (nonatomic, copy) NSString *contentString;
+@property (nonatomic, copy) NSString *buttonTitle;
+@property (nonatomic, copy) NSString *imageUrl;
+
+@end
+
+// ttk notice model
+@interface TTGCSocialTTkNotice : NSObject
+
+@property (nonatomic, copy) NSString *ttkUid;
+@property (nonatomic, copy) NSString *contentString;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *imageUrl;
+
+@end
+
 
 NS_ASSUME_NONNULL_END
