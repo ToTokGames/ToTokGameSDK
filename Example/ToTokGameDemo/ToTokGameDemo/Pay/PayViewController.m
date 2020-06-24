@@ -7,7 +7,7 @@
 //
 
 #import "PayViewController.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 #import "Header.h"
 
 @interface PayViewController ()
@@ -53,7 +53,7 @@
 
 - (void)buy:(NSString *)sku {
     TTGCHUD_NO_Stop(@"pay...")
-    [[ToTokGameManager defaultManager] buyProductWithSKU:sku Progress:^(TTGCOderStatus orderStatus) {
+    [[TTkGameManager defaultManager] buyProductWithSKU:sku Progress:^(TTGCOderStatus orderStatus) {
         NSLog(@"Order Status ：%ld",(long)orderStatus);
     } Completion:^(id  _Nullable orderInfo, NSError * _Nullable error) {
         if (orderInfo) {

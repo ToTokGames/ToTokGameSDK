@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "Header.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 
 @interface LoginViewController ()
 
@@ -39,13 +39,13 @@
 }
 
 - (IBAction)agreement:(id)sender {
-    [[ToTokGameManager defaultManager] showAgreementView];
+    [[TTkGameManager defaultManager] showAgreementView];
 }
 
 - (IBAction)appleLogin:(id)sender {
     TTGCHUD_NO_Stop(@"login...")
     __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] loginWithAppleCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+    [[TTkGameManager defaultManager] loginWithAppleCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
             //login success
             TTGCHUD_SUCCESS(@"success")
@@ -60,7 +60,7 @@
 - (IBAction)gamecenterLogin:(id)sender {
     TTGCHUD_NO_Stop(@"login...")
     __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] loginWithGameCenterCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+    [[TTkGameManager defaultManager] loginWithGameCenterCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
             //login success
             TTGCHUD_SUCCESS(@"success")
@@ -75,7 +75,7 @@
 - (IBAction)facebookLogin:(id)sender {
     TTGCHUD_NO_Stop(@"login...")
     __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] loginWithFacebookCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+    [[TTkGameManager defaultManager] loginWithFacebookCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
             //login success
             TTGCHUD_SUCCESS(@"success")
@@ -90,7 +90,7 @@
 - (IBAction)guestLogin:(id)sender {
     TTGCHUD_NO_Stop(@"login...")
     __weak __typeof(self)weakSelf = self;
-    [[ToTokGameManager defaultManager] guestLoginCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+    [[TTkGameManager defaultManager] guestLoginCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
             //login success
             TTGCHUD_SUCCESS(@"success")

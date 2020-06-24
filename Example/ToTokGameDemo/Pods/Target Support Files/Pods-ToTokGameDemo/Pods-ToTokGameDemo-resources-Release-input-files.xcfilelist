@@ -1,3 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-ToTokGameDemo/Pods-ToTokGameDemo-resources.sh
-${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/ToTokGame.bundle
-${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/TTGCProgressHUD.bundle
+${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTkGame.bundle
+${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle

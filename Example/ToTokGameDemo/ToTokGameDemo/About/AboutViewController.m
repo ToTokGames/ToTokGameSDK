@@ -7,7 +7,7 @@
 //
 
 #import "AboutViewController.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 #import "Header.h"
 #import "TGWebViewController.h"
 
@@ -33,16 +33,14 @@
 }
 
 - (IBAction)agreement:(id)sender {
-    [[ToTokGameManager defaultManager] showAgreementView];
+    [[TTkGameManager defaultManager] showAgreementView];
 }
 
 - (IBAction)privicy:(id)sender {
 }
 
 - (IBAction)home:(id)sender {
-    NSString *urlString = [[ToTokGameManager defaultManager] getHomepageUrlString];
-    webtitle = @"Home";
-    [self openWebView:urlString];
+    
 }
 
 - (void)openWebView:(NSString *)url {
@@ -53,7 +51,7 @@
 }
 
 - (IBAction)version:(id)sender {
-    [[ToTokGameManager defaultManager] checkAppVersionCompletion:^(BOOL hasNewVersion, TTGCAppVersionModel * _Nullable versionInfo, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] checkAppVersionCompletion:^(BOOL hasNewVersion, TTGCAppVersionModel * _Nullable versionInfo, NSError * _Nullable error) {
         self.versionLabel.text = versionInfo.currentVersionCode;
         if (!hasNewVersion) {
             TTGCHUD_HINT(@"Already the latest version");
@@ -62,7 +60,7 @@
             if (forceUpdate) {
                 // If you need to force update, you cannot continue to use it, and you need to jump to the appstore to update.
                 // Open appstore
-                [[ToTokGameManager defaultManager] openAppStoreWithStoreIdentifier:@"xxx"];
+                [[TTkGameManager defaultManager] openAppStoreWithStoreIdentifier:@"xxx"];
                 
             } else {
                 // If update is not required, you can optionally prompt for an upgrade.

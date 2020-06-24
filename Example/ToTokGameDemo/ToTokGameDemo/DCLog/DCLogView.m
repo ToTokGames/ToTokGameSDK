@@ -8,7 +8,7 @@
 
 #import "DCLogView.h"
 #import "DCLog.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 
 #pragma mark - 导航栏，状态栏，TabBar的高度
 #define StatusBar_Height [UIApplication sharedApplication].statusBarFrame.size.height

@@ -7,7 +7,7 @@
 //
 
 #import "DevSettingViewController.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 #import "Header.h"
 
 @interface DevSettingViewController ()
@@ -33,14 +33,14 @@
 }
 
 - (void)setupUI {
-    NSString *domain = [[ToTokGameManager defaultManager] SDKServerDomain];
+    NSString *domain = [[TTkGameManager defaultManager] SDKServerDomain];
     self.domainString.text = domain;
     if ([domain containsString:@"t-"]) {
         self.domainStatus.text = @"test";
     } else {
         self.domainStatus.text = @"pro";
     }
-    int pay = [[ToTokGameManager defaultManager] getPayEnvironment];
+    int pay = [[TTkGameManager defaultManager] getPayEnvironment];
     if (pay == 2) {
         self.payStatus.text = @"test";
     } else {
@@ -51,11 +51,11 @@
 - (IBAction)domainSetting:(id)sender {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Tips" message:@"Please select server environment" preferredStyle:UIAlertControllerStyleActionSheet];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Test" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[ToTokGameManager defaultManager] setServerDomainTest];
+        [[TTkGameManager defaultManager] setServerDomainTest];
         [self setupUI];
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Production" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[ToTokGameManager defaultManager] setServerDomainProduction];
+        [[TTkGameManager defaultManager] setServerDomainProduction];
         [self setupUI];
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil]];
@@ -65,11 +65,11 @@
 - (IBAction)paySetting:(id)sender {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Tips" message:@"Please select In-App Purchase environment" preferredStyle:UIAlertControllerStyleActionSheet];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Test" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[ToTokGameManager defaultManager] setPayEnvironmentTest];
+        [[TTkGameManager defaultManager] setPayEnvironmentTest];
         [self setupUI];
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Production" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[ToTokGameManager defaultManager] setPayEnvironmentProduction];
+        [[TTkGameManager defaultManager] setPayEnvironmentProduction];
         [self setupUI];
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil]];
@@ -79,9 +79,9 @@
 - (IBAction)debug:(id)sender {
     UISwitch *switchbutton = sender;
     if (switchbutton.isOn) {
-        [[ToTokGameManager defaultManager] openLogInfo];
+        [[TTkGameManager defaultManager] openLogInfo];
     } else {
-        [[ToTokGameManager defaultManager] closeLogInfo];
+        [[TTkGameManager defaultManager] closeLogInfo];
     }
 }
 

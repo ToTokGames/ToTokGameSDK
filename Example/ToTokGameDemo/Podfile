@@ -6,7 +6,7 @@ target 'ToTokGameDemo' do
   use_frameworks!
 
   # Pods for ToTokGameDemo
-  pod 'ToTokGameSDK'
+  pod 'TTkGameSDK'
   pod 'SDWebImage'
 #  pod 'FBSDKCoreKit' , '5.13.1'
 #  pod 'FBSDKLoginKit' , '5.13.1'

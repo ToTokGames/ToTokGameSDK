@@ -1,6 +1,6 @@
 //
 //  TTGCWebViewController.m
-//  ToTokGameSDK
+//  TTkGameSDK
 //
 //  Created by Balalaika on 2020/3/5.
 //  Copyright © 2020 GMCT. All rights reserved.

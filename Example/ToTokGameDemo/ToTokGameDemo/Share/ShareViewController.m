@@ -38,7 +38,7 @@
 - (IBAction)fblink:(id)sender {
     TTGCSocialFBInvite *obj = [[TTGCSocialFBInvite alloc] init];
     //obj.quote = @"Join us";
-    [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
         if (success) {
         } else {
             if (error) {
@@ -51,7 +51,7 @@
 - (IBAction)fbGameInviteFriends:(id)sender {
     TTGCSocialFBFriendsGameInvite *obj = [[TTGCSocialFBFriendsGameInvite alloc] init];
     obj.inviteString = @"join us";
-    [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
         if (success) {
             TTGCHUD_SUCCESS(@"sent the message");
         } else {
@@ -66,7 +66,7 @@
     UIImage *image = [UIImage imageNamed:@"totokgame_logo_1024"];
     TTGCSocialFBImages *obj = [[TTGCSocialFBImages alloc] init];
     obj.photoImage = image;
-    [[ToTokGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] facebookShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
         if (success) {
         } else {
             if (error) {
@@ -79,7 +79,7 @@
 - (IBAction)walink:(id)sender {
     TTGCSocialWAInvite *obj = [[TTGCSocialWAInvite alloc] init];
     obj.contentString = @"play games";
-    [[ToTokGameManager defaultManager] whatsAppShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] whatsAppShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
         if (success) {
         } else {
             if (error) {
@@ -90,7 +90,7 @@
 }
 
 - (IBAction)wapic:(id)sender {
-    [[ToTokGameManager defaultManager] openSystemPhotoCompletion:^(id  _Nullable mediaInfo, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] openSystemPhotoCompletion:^(id  _Nullable mediaInfo, NSError * _Nullable error) {
         if (mediaInfo) {
             NSString *type = [mediaInfo objectForKey:@"MediaType"];
             if (type) {
@@ -101,7 +101,7 @@
                         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                             TTGCSocialWAImages *obj = [[TTGCSocialWAImages alloc] init];
                             obj.photos = @[image].mutableCopy;
-                            [[ToTokGameManager defaultManager] whatsAppShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
+                            [[TTkGameManager defaultManager] whatsAppShareMessage:obj completion:^(BOOL success, NSError * _Nullable error) {
                                 if (success) {
                                 } else {
                                     if (error) {

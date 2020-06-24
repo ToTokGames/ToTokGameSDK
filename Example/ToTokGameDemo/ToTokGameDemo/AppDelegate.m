@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 
 @interface AppDelegate ()
 
@@ -20,25 +20,25 @@
     // Override point for customization after application launch.
     
     // set SDK Api Enviroment
-    [[ToTokGameManager defaultManager] setServerDomainTest];
+    [[TTkGameManager defaultManager] setServerDomainTest];
     // open log
-    [[ToTokGameManager defaultManager] openLogInfo];
+    [[TTkGameManager defaultManager] openLogInfo];
     
     // launch SDK
     NSString *appId = @"LTAIe4EmdMyxioiR";
     NSString *appSecret = @"d96b2c8baa2a1bf6671ad29cfd3fb566";
     NSString *gameid = @"126847495400849409";
-    [[ToTokGameManager defaultManager] setupWithAppId:appId Secret:appSecret GameId:gameid Application:application Options:launchOptions];
+    [[TTkGameManager defaultManager] setupWithAppId:appId Secret:appSecret GameId:gameid Application:application Options:launchOptions];
                 
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    return [[ToTokGameManager defaultManager] application:app openURL:url options:options];
+    return [[TTkGameManager defaultManager] application:app openURL:url options:options];
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[ToTokGameManager defaultManager] registerDeviceToken:deviceToken];
+    [[TTkGameManager defaultManager] registerDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -47,30 +47,30 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    [[ToTokGameManager defaultManager] application:application didReceiveRemoteNotification:userInfo];
+    [[TTkGameManager defaultManager] application:application didReceiveRemoteNotification:userInfo];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[ToTokGameManager defaultManager] applicationDidEnterBackground:application];
+    [[TTkGameManager defaultManager] applicationDidEnterBackground:application];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    [[ToTokGameManager defaultManager] applicationWillEnterForeground:application];
+    [[TTkGameManager defaultManager] applicationWillEnterForeground:application];
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[ToTokGameManager defaultManager] applicationDidBecomeActive:application];
+    [[TTkGameManager defaultManager] applicationDidBecomeActive:application];
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [[ToTokGameManager defaultManager] applicationWillTerminate:application];
+    [[TTkGameManager defaultManager] applicationWillTerminate:application];
 }
 
 #pragma mark Universal Link
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    return [[ToTokGameManager defaultManager] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+    return [[TTkGameManager defaultManager] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
 

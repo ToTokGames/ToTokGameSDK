@@ -97,12 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/ToTokGame.bundle"
-  install_resource "${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/TTGCProgressHUD.bundle"
+  install_resource "${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTkGame.bundle"
+  install_resource "${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/ToTokGame.bundle"
-  install_resource "${PODS_ROOT}/ToTokGameSDK/SDK/ToTokGameSDK/Core/TTGCProgressHUD.bundle"
+  install_resource "${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTkGame.bundle"
+  install_resource "${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

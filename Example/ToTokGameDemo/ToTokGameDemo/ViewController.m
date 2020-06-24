@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 
 #import <SDWebImage/SDWebImage.h>
 #import "TGWebViewController.h"
@@ -43,10 +43,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    [[ToTokGameManager defaultManager] setPayEnvironmentTest];
+    [[TTkGameManager defaultManager] setPayEnvironmentTest];
     [self showLoginView];
     
-    [[ToTokGameManager defaultManager] accountKickedNotification:^(NSString * _Nullable information) {
+    [[TTkGameManager defaultManager] accountKickedNotification:^(NSString * _Nullable information) {
         //Your account has been logged in on another device, please login again.
         TTGCHUD_HINT(information);
         [self showLoginView];
@@ -55,7 +55,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [[ToTokGameManager defaultManager] userInfoCompletion:^(id  _Nullable userInfo, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] userInfoCompletion:^(id  _Nullable userInfo, NSError * _Nullable error) {
         if (!error) {
             self->userModel = userInfo;
             [self freshUserInfo:self->userModel];
@@ -77,7 +77,7 @@
 }
 
 - (void)showLoginView {
-    if ([[ToTokGameManager defaultManager] loginType] == TTGCLoginType_unloggedIn) {
+    if ([[TTkGameManager defaultManager] loginType] == TTGCLoginType_unloggedIn) {
         //unlogged in and show login UI
         LoginViewController *vc = [[LoginViewController alloc] init];
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -100,12 +100,12 @@
 }
 
 - (IBAction)clearNotification:(id)sender {
-    [[ToTokGameManager defaultManager] cleanNotification];
+    [[TTkGameManager defaultManager] cleanNotification];
     TTGCHUD_SUCCESS(@"cleared~");
 }
 
 - (IBAction)systemNotificationSetting:(id)sender {
-    [[ToTokGameManager defaultManager] systemNotificationSetting];
+    [[TTkGameManager defaultManager] systemNotificationSetting];
 }
 
 - (IBAction)devSetting:(id)sender {
@@ -131,7 +131,7 @@
 
 - (void)getUserInfo {
     TTGCHUD_NO_Stop(@"loading...")
-    [[ToTokGameManager defaultManager] userInfoCompletion:^(id  _Nullable userInfo, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] userInfoCompletion:^(id  _Nullable userInfo, NSError * _Nullable error) {
         if (!error) {
             TTGCHUD_SUCCESS(@"success")
             self->userModel = userInfo;
@@ -157,7 +157,7 @@
         self.nicknameLabel.text = model.nickname;
     }
     
-    if (model.userType == TTGCLoginType_ToTok) {
+    if (model.userType == TTGCLoginType_TTk) {
         self.acountType.text = @"ToTok";
     } else if (model.userType == TTGCLoginType_GameCenter) {
         self.acountType.text = @"GameCenter";
@@ -165,6 +165,8 @@
         self.acountType.text = @"Facebook";
     } else if (model.userType == TTGCLoginType_Guest) {
         self.acountType.text = @"Guest";
+    } else if (model.userType == TTGCLoginType_Apple) {
+        self.acountType.text = @"Apple";
     } else if (model.userType == TTGCLoginType_Apple) {
         self.acountType.text = @"Apple";
     } else {
@@ -179,7 +181,7 @@
 
 - (IBAction)logout:(id)sender {
     TTGCHUD_NO_Stop(@"logout...")
-    [[ToTokGameManager defaultManager] logout:^(BOOL success, NSError * _Nullable error) {
+    [[TTkGameManager defaultManager] logout:^(BOOL success, NSError * _Nullable error) {
         if (success) {
             TTGCHUD_SUCCESS(@"success")
             [self showLoginView];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ToTokGameSDK/ToTokGameSDK.h>
+#import <TTkGameSDK/TTkGameSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
