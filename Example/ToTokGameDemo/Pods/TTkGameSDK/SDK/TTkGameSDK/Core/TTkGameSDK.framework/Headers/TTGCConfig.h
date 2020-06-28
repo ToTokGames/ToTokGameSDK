@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TTGCUserModel.h"
 #import "TTGCFriendModel.h"
+#import "TTGCPlayingFriendModel.h"
 #import "TTGCOrderModel.h"
 #import "TTGCSocialMessageObject.h"
 #import "TTGCAppVersionModel.h"

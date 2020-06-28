@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleTop;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottom;
 
+@property (weak, nonatomic) IBOutlet UIButton *twitterLoginButton;
+@property (weak, nonatomic) IBOutlet UIButton *totokLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *appleLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *gamecenterLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *facebookLoginButton;
@@ -36,6 +38,8 @@
     self.gamecenterLoginButton.layer.cornerRadius = 4.0;
     self.facebookLoginButton.layer.cornerRadius = 4.0;
     self.guestLoginButton.layer.cornerRadius = 4.0;
+    self.totokLoginButton.layer.cornerRadius = 4.0;
+    self.twitterLoginButton.layer.cornerRadius = 4.0;
 }
 
 - (IBAction)agreement:(id)sender {
@@ -93,6 +97,36 @@
     [[TTkGameManager defaultManager] guestLoginCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
         if (!error) {
             //login success
+            TTGCHUD_SUCCESS(@"success");
+            [weakSelf closeLoginView];
+        } else {
+            //error info
+            TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
+        }
+    }];
+}
+
+- (IBAction)totokLogin:(id)sender {
+    TTGCHUD_NO_Stop(@"login...")
+    __weak __typeof(self)weakSelf = self;
+    [[TTkGameManager defaultManager] loginWithTTkCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+        if (!error) {
+            //login success
+            TTGCHUD_SUCCESS(@"success");
+            [weakSelf closeLoginView];
+        } else {
+            //error info
+            TTGCHUD_HINT([error.userInfo objectForKey:@"errorMsg"]);
+        }
+    }];
+}
+
+- (IBAction)twitterLogin:(id)sender {
+    TTGCHUD_NO_Stop(@"login...")
+    __weak __typeof(self)weakSelf = self;
+    [[TTkGameManager defaultManager] loginWithTwitterCompletion:^(id  _Nonnull userInfo, NSError * _Nonnull error) {
+        if (!error) {
+            //login success
             TTGCHUD_SUCCESS(@"success")
             [weakSelf closeLoginView];
         } else {
@@ -103,6 +137,7 @@
 }
 
 - (void)closeLoginView {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"login_success" object:nil];
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 

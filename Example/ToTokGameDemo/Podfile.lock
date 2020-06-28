@@ -86,18 +86,27 @@ PODS:
   - SDWebImage (5.8.1):
     - SDWebImage/Core (= 5.8.1)
   - SDWebImage/Core (5.8.1)
-  - TTkGameSDK (1.1.0):
-    - TTkGameSDK/Analytics (= 1.1.0)
-    - TTkGameSDK/Core (= 1.1.0)
-    - TTkGameSDK/Facebook (= 1.1.0)
-  - TTkGameSDK/Analytics (1.1.0):
+  - TTkGameSDK (1.1.1):
+    - TTkGameSDK/Analytics (= 1.1.1)
+    - TTkGameSDK/Core (= 1.1.1)
+    - TTkGameSDK/Facebook (= 1.1.1)
+    - TTkGameSDK/Twitter (= 1.1.1)
+  - TTkGameSDK/Analytics (1.1.1):
     - Firebase/Analytics
     - Firebase/DynamicLinks
-  - TTkGameSDK/Core (1.1.0)
-  - TTkGameSDK/Facebook (1.1.0):
+    - TTkGameSDK/Core
+  - TTkGameSDK/Core (1.1.1)
+  - TTkGameSDK/Facebook (1.1.1):
     - FBSDKCoreKit (~> 6.5.1)
     - FBSDKLoginKit (~> 6.5.1)
     - FBSDKShareKit (~> 6.5.1)
+    - TTkGameSDK/Core
+  - TTkGameSDK/Twitter (1.1.1):
+    - TTkGameSDK/Core
+    - TwitterKit5
+  - TwitterCore (3.2.0)
+  - TwitterKit5 (5.2.0):
+    - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
   - SDWebImage
@@ -122,6 +131,8 @@ SPEC REPOS:
     - PromisesObjC
     - SDWebImage
     - TTkGameSDK
+    - TwitterCore
+    - TwitterKit5
 
 SPEC CHECKSUMS:
   FBSDKCoreKit: ada5c8a05188daefc9addb985c52b8a1b26da519
@@ -140,8 +151,10 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
-  TTkGameSDK: 5e739ecc143894d00936332973e19be47c9fc16d
+  TTkGameSDK: b823a12b77edc499ae41c201d539d969dd6932ff
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit5: 64095dfefcf39be2355711ef27112d55e340d90e
 
 PODFILE CHECKSUM: af7ca7270abf2ae14245dbadcbe9b86a00d0234f
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

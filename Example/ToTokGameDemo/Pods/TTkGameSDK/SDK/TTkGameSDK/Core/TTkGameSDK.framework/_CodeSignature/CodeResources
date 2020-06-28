@@ -8,41 +8,25 @@
 		<data>
 		atweYpVV4hWxnNfcmXmrN5oWzRc=
 		</data>
-		<key>Headers/TTGCCompatibilityMacros.h</key>
-		<data>
-		CFbi1nDzkqY7eOnAv0HjIywojhI=
-		</data>
 		<key>Headers/TTGCConfig.h</key>
 		<data>
-		fFIGEPKc5CK57S0e343cnyto0E8=
+		gYWLlWSkzGvIsRlNzWakVgbvSDc=
 		</data>
 		<key>Headers/TTGCFriendModel.h</key>
 		<data>
-		DcLZoHkOSTVoIL1Cs2wfkYUbeZ0=
-		</data>
-		<key>Headers/TTGCHTTPSessionManager.h</key>
-		<data>
-		ZyucsnWp10QHquyqjENRHS3NB0M=
+		Qlc+ioxZ6xVv8ADTtDa6qn/LqxE=
 		</data>
 		<key>Headers/TTGCMessageModel.h</key>
 		<data>
 		DZ6gEBgMyZgJj/lYlmHU5xOQDOI=
 		</data>
-		<key>Headers/TTGCNetWorkManager.h</key>
-		<data>
-		bcAtVRiQvcKPwLfoGLS/JMr7cEI=
-		</data>
-		<key>Headers/TTGCNetworkReachabilityManager.h</key>
-		<data>
-		Z7INJHerUdzFEIZeyFSjeryTDsI=
-		</data>
-		<key>Headers/TTGCNetworking.h</key>
-		<data>
-		K45yjtnOm5MZfohYJJi8wvuWEvQ=
-		</data>
 		<key>Headers/TTGCOrderModel.h</key>
 		<data>
 		Lx7STiO+HUQud8ux0JDXvOcQZpo=
+		</data>
+		<key>Headers/TTGCPlayingFriendModel.h</key>
+		<data>
+		8l5SOkt68TVTsyMUOEjNjCTVeHM=
 		</data>
 		<key>Headers/TTGCProgressHUD.h</key>
 		<data>
@@ -52,49 +36,33 @@
 		<data>
 		Hiv5b4L21yNYuxOPOYRh6Su/S80=
 		</data>
-		<key>Headers/TTGCSecurityPolicy.h</key>
-		<data>
-		n4s/hTZnRNsK3lNWHoaKXReto54=
-		</data>
 		<key>Headers/TTGCSocialHandler.h</key>
 		<data>
 		ReVndkc1mxQzrZbvTQHYwRQVxrI=
 		</data>
 		<key>Headers/TTGCSocialMessageObject.h</key>
 		<data>
-		l4gdPgNXLKLhsWucWvoT9pQsMWg=
+		2pgmD0hVq514iGmDnIdla625uEo=
 		</data>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
 		<data>
 		Ff4QopdnaK/fWaURqCs3KoYBNCs=
 		</data>
-		<key>Headers/TTGCURLRequestSerialization.h</key>
-		<data>
-		XdXJUxDFT1ROvoePNsholAEvIoQ=
-		</data>
-		<key>Headers/TTGCURLResponseSerialization.h</key>
-		<data>
-		xNfoVt+0uH1LZtrJ03YfoJbJSoc=
-		</data>
-		<key>Headers/TTGCURLSessionManager.h</key>
-		<data>
-		EJ1ze7uM79PuhPy+X1nMZrObOUI=
-		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		a7wUYypT/zblgHnmAQxxkWFVQbk=
+		icD4uLcDpY+iRMOPi+R7NP+zDXg=
 		</data>
 		<key>Headers/TTkGameManager.h</key>
 		<data>
-		cY/AHgmcdHou/1wVx7RNfV8V79c=
+		O0dWcS1ZZLWoTiJCRVlGu3oDOUk=
 		</data>
 		<key>Headers/TTkGameSDK.h</key>
 		<data>
-		IC5UyK4qNOHRlcnmO09VhbhAGKQ=
+		x3ymos50nrcVm2P2DGWm+G07Gq0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X1CN/GVzel1rzuFWogcGhlqI7ew=
+		n8q5+9zvMJKasjGmsY54VWRn0Sk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,48 +82,26 @@
 			nQua0r5jasynY0Ra9ob/dtTMUUNpiqyPokA1K1A18PU=
 			</data>
 		</dict>
-		<key>Headers/TTGCCompatibilityMacros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CFbi1nDzkqY7eOnAv0HjIywojhI=
-			</data>
-			<key>hash2</key>
-			<data>
-			iMIWIC/mAf3Dlu6w8o9MQL5QvLJR8szxjIKfQUCU8j4=
-			</data>
-		</dict>
 		<key>Headers/TTGCConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fFIGEPKc5CK57S0e343cnyto0E8=
+			gYWLlWSkzGvIsRlNzWakVgbvSDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Dr8YrpSxiLL2gFTG4jLbN8pZRBe6DoyvzYKuSMnfwY=
+			cOuqXtRK16bpchOe6HNIHxIqC7Yb4B7OJ+1TgOVaO0Y=
 			</data>
 		</dict>
 		<key>Headers/TTGCFriendModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DcLZoHkOSTVoIL1Cs2wfkYUbeZ0=
+			Qlc+ioxZ6xVv8ADTtDa6qn/LqxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			74xhcIU+F/wSZIHFFY/kz3Oyp9EalxfmS5G7N/ZOLLY=
-			</data>
-		</dict>
-		<key>Headers/TTGCHTTPSessionManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZyucsnWp10QHquyqjENRHS3NB0M=
-			</data>
-			<key>hash2</key>
-			<data>
-			hg+PEqOj1+Q4nP6LyMvB8CnpqOsUGlEBwJBZuDlnUew=
+			o2/g1cUenBvLpQe081jEZMB009lRJA1CmbCt9LcBB/E=
 			</data>
 		</dict>
 		<key>Headers/TTGCMessageModel.h</key>
@@ -169,39 +115,6 @@
 			97K8wk6U06r9jvvwO3fUd6U6fiHuKOAiq5JaYZawJNM=
 			</data>
 		</dict>
-		<key>Headers/TTGCNetWorkManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bcAtVRiQvcKPwLfoGLS/JMr7cEI=
-			</data>
-			<key>hash2</key>
-			<data>
-			U398LvXdYkg1fo9MkdlgE7bx/ElRzIFC/V6otcNOim0=
-			</data>
-		</dict>
-		<key>Headers/TTGCNetworkReachabilityManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z7INJHerUdzFEIZeyFSjeryTDsI=
-			</data>
-			<key>hash2</key>
-			<data>
-			NBtp0Fqc7NiDweFAbHuLAjBUfXFjIjNfH/tzt66z15Q=
-			</data>
-		</dict>
-		<key>Headers/TTGCNetworking.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			K45yjtnOm5MZfohYJJi8wvuWEvQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			8B8+mEW8reL9rn3dllgRj+8oRTvOZ+AcOIgdsvVVek4=
-			</data>
-		</dict>
 		<key>Headers/TTGCOrderModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -211,6 +124,17 @@
 			<key>hash2</key>
 			<data>
 			VXBV3bEfAQ5QSPzGn8yN8oc3gyjIAkW4Ko7ZtpR9lJM=
+			</data>
+		</dict>
+		<key>Headers/TTGCPlayingFriendModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8l5SOkt68TVTsyMUOEjNjCTVeHM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zkph8QQ4KhNH4U/AdIPgojuusuqtNuOIGJg2FUsaFOQ=
 			</data>
 		</dict>
 		<key>Headers/TTGCProgressHUD.h</key>
@@ -235,17 +159,6 @@
 			xCkM9gwsMRTV5d3TER2WIbNOGdfMtp+X6aspY0i1RDI=
 			</data>
 		</dict>
-		<key>Headers/TTGCSecurityPolicy.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n4s/hTZnRNsK3lNWHoaKXReto54=
-			</data>
-			<key>hash2</key>
-			<data>
-			YvW/r5M5ltZ/4aVwlZ6kX9oCh1vJWvXi6W8ovts1fqs=
-			</data>
-		</dict>
 		<key>Headers/TTGCSocialHandler.h</key>
 		<dict>
 			<key>hash</key>
@@ -261,11 +174,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l4gdPgNXLKLhsWucWvoT9pQsMWg=
+			2pgmD0hVq514iGmDnIdla625uEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iyj6r+dNMOlXAX/MolzxjJzGbZIXmozIOXWBBOVO1Q8=
+			0ndsxxd0LGHKobWUwkyEBB4yESHBVCACgW983d8ZscQ=
 			</data>
 		</dict>
 		<key>Headers/TTGCSocialPlatformProvider.h</key>
@@ -279,70 +192,37 @@
 			9nvZpW7hxMCGhD+JdVpZz40v+7V0gCKls/agjocUKuc=
 			</data>
 		</dict>
-		<key>Headers/TTGCURLRequestSerialization.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XdXJUxDFT1ROvoePNsholAEvIoQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			LvUHK/ayCEXfxqfXwGuBCBjG14WaiIOvBgv8YCaWQ10=
-			</data>
-		</dict>
-		<key>Headers/TTGCURLResponseSerialization.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xNfoVt+0uH1LZtrJ03YfoJbJSoc=
-			</data>
-			<key>hash2</key>
-			<data>
-			3JLtTQafC5/nvjVGiqpebFb8abo/MXE8axVUklIcMt8=
-			</data>
-		</dict>
-		<key>Headers/TTGCURLSessionManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EJ1ze7uM79PuhPy+X1nMZrObOUI=
-			</data>
-			<key>hash2</key>
-			<data>
-			EiYCVaF4ep1QcNQC1mdhK1+Jk9hWujq/TdiM3Zicaa0=
-			</data>
-		</dict>
 		<key>Headers/TTGCUserModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a7wUYypT/zblgHnmAQxxkWFVQbk=
+			icD4uLcDpY+iRMOPi+R7NP+zDXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+Bqb1YN7L4W+7sbMWYsOKC80F+f1H2iq5o4hzcxTvw=
+			6qqc2Ch4chS31zjzvWhVYlY08TXvccnuhM4c+P8P5dI=
 			</data>
 		</dict>
 		<key>Headers/TTkGameManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cY/AHgmcdHou/1wVx7RNfV8V79c=
+			O0dWcS1ZZLWoTiJCRVlGu3oDOUk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3NMqdfU09BeKfWlaEB7GARZ5uQH+CA1z8YC0oCt/jxg=
+			P7oUMWXEjIcRc55ABOMZejJCH+ZPB+DvOXiWB6vJ794=
 			</data>
 		</dict>
 		<key>Headers/TTkGameSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IC5UyK4qNOHRlcnmO09VhbhAGKQ=
+			x3ymos50nrcVm2P2DGWm+G07Gq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			s2dzkEnPo6aj45OHpcEkGpgGu7oN61fBvwkiwrsjF+k=
+			KkhmvtIMifPDhftvcT4iCPLQ16VJJArOP7S9fdFr2BU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

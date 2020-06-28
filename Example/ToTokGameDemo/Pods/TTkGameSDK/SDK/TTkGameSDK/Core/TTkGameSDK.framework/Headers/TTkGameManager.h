@@ -72,6 +72,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)loginWithFacebookCompletion:(TTGCUserCompletionHandler)completion;
 
+/**
+ Twitter Login
+ 
+ @param completion login callback
+ */
+- (void)loginWithTwitterCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
  Third-party callback（Must be implemented in AppDelegate）
@@ -132,6 +138,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)openSystemPhotoCompletion:(TTGCSocialSystemPhotoCompletionHandler)completion;
 
+/**
+*  ttk share
+*
+*  @param message  share content type @see TTGCSocialTTkInvite TTGCSocialTTkNotice
+*  @param completion   callback
+*/
+- (void)sendToMessageTottk:(id)message Completion:(TTGCShareCompleteHandler)completion;
+
 
 #pragma mark - Push Notification
 
@@ -180,18 +194,18 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - TTk
 
 /**
- Get friend list from server
+ Get ttk friends list from server
  
- @param completion friend list callback
+ @param completion friends list callback
  */
 - (void)getFriendsFromServerCompletion:(TTGCTTkFriendsCompletionHandler)completion;
 
 /**
- Read the friend list from the local (the local data will not be available until the server obtains it)
+ Get ttk playing friends list from server
  
- @param completion friend list callback
+ @param completion friends list callback
  */
-- (void)getFriendsCompletion:(TTGCTTkFriendsCompletionHandler)completion;
+- (void)getPlayingFriendsFromServerCompletion:(TTGCTTkFriendsCompletionHandler)completion;
 
 
 #pragma mark - Pay

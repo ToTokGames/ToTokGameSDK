@@ -8,6 +8,7 @@
 
 #import "ShareViewController.h"
 #import "Header.h"
+#import "FriendsListViewController.h"
 
 @interface ShareViewController ()
 
@@ -121,6 +122,19 @@
         }
     }];
 }
+
+- (IBAction)ttkFriends:(id)sender {
+    FriendsListViewController *vc = [[FriendsListViewController alloc] init];
+    vc.isPlaying = NO;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)ttkPlayingFriends:(id)sender {
+    FriendsListViewController *vc = [[FriendsListViewController alloc] init];
+    vc.isPlaying = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 /*
 #pragma mark - Navigation

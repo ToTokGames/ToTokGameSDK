@@ -44,6 +44,14 @@
 				<string>totokgame</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twitterkit-NfL3oT5912t6nsO00AlC3M0Nc</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
@@ -109,6 +117,10 @@
 	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photo albums are required to share pictures, please allow access</string>
+	<key>TwitterConsumerKey</key>
+	<string>NfL3oT5912t6nsO00AlC3M0Nc</string>
+	<key>TwitterConsumerSecret</key>
+	<string>3xCiiqVrTnpO1tJN0xaxTcquz1rBTqIGeEZzCV79z0lpHq9EXB</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

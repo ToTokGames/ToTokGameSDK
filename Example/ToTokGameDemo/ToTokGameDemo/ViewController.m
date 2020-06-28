@@ -19,8 +19,6 @@
 #import "AboutViewController.h"
 #import "LoginViewController.h"
 
-#import "DCLog.h"
-
 
 @interface ViewController ()
 
@@ -29,7 +27,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *userIdLabel;
 @property (weak, nonatomic) IBOutlet UILabel *acountType;
 
-@property (weak, nonatomic) IBOutlet UIButton *logButton;
 @property (weak, nonatomic) IBOutlet UIButton *logoutButton;
 
 @end
@@ -64,16 +61,10 @@
     }];
 }
 
-- (IBAction)log:(id)sender {
-    [DCLog changeVisible];
-}
-
 - (void)setupUI {
     self.photoImageView.layer.cornerRadius = 49;
     self.photoImageView.clipsToBounds = YES;
-    self.logButton.layer.cornerRadius = 4.0;
     self.logoutButton.layer.cornerRadius = 5.0;
-    self.logButton.hidden = YES;
 }
 
 - (void)showLoginView {
@@ -167,8 +158,8 @@
         self.acountType.text = @"Guest";
     } else if (model.userType == TTGCLoginType_Apple) {
         self.acountType.text = @"Apple";
-    } else if (model.userType == TTGCLoginType_Apple) {
-        self.acountType.text = @"Apple";
+    } else if (model.userType == TTGCLoginType_Twitter) {
+        self.acountType.text = @"Twitter";
     } else {
         self.acountType.text = @"Unknow";
     }

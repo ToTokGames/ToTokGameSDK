@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-ToTokGameDemo/Pods-ToTokGameDemo-resources.sh
 ${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTkGame.bundle
 ${PODS_ROOT}/TTkGameSDK/SDK/TTkGameSDK/Core/TTGCProgressHUD.bundle
+${PODS_ROOT}/TwitterKit5/iOS/TwitterKit.framework/TwitterKitResources.bundle
