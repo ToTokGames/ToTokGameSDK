@@ -112,6 +112,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)accountKickedNotification:(TTGCAccountKickedHandler)handler;
 
+/**
+ Notification of account being banned
+ 
+ @param handler notification information
+ */
+- (void)accountBannedNotification:(TTGCAccountBannedHandler)handler;
+
 #pragma mark - Share
 
 /**

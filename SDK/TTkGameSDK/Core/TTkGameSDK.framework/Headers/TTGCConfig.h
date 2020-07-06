@@ -101,11 +101,19 @@ typedef void (^TTGCSocialSystemPhotoCompletionHandler)(id _Nullable mediaInfo, N
 typedef void (^TTGCLogoutCompleteHandler)(BOOL success, NSError *_Nullable error);
 
 /**
- *  Logout callback
+ *  Account Kicked Notification
  *
  *  @param information notification message
  */
 typedef void (^TTGCAccountKickedHandler)(NSString *_Nullable information);
+
+/**
+ *  Account Banned Notification
+ *
+ *  @param information reason message
+ *  @param time banned time （timestamp）
+ */
+typedef void (^TTGCAccountBannedHandler)(NSString *_Nullable information, NSString *_Nullable time);
 
 /**
  *  TTk Friends list callback
