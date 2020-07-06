@@ -1,4 +1,5 @@
 PODS:
+  - AppsFlyerFramework (5.4.1)
   - FBSDKCoreKit (6.5.2):
     - FBSDKCoreKit/Basics (= 6.5.2)
     - FBSDKCoreKit/Core (= 6.5.2)
@@ -83,25 +84,34 @@ PODS:
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.9)
-  - SDWebImage (5.8.1):
-    - SDWebImage/Core (= 5.8.1)
-  - SDWebImage/Core (5.8.1)
-  - TTkGameSDK (1.1.1):
-    - TTkGameSDK/Analytics (= 1.1.1)
-    - TTkGameSDK/Core (= 1.1.1)
-    - TTkGameSDK/Facebook (= 1.1.1)
-    - TTkGameSDK/Twitter (= 1.1.1)
-  - TTkGameSDK/Analytics (1.1.1):
+  - SDWebImage (5.8.3):
+    - SDWebImage/Core (= 5.8.3)
+  - SDWebImage/Core (5.8.3)
+  - TapjoySDK (12.6.0)
+  - TTkGameSDK (1.1.2):
+    - TTkGameSDK/Analytics (= 1.1.2)
+    - TTkGameSDK/AppsFlyer (= 1.1.2)
+    - TTkGameSDK/Core (= 1.1.2)
+    - TTkGameSDK/Facebook (= 1.1.2)
+    - TTkGameSDK/Tapjoy (= 1.1.2)
+    - TTkGameSDK/Twitter (= 1.1.2)
+  - TTkGameSDK/Analytics (1.1.2):
     - Firebase/Analytics
     - Firebase/DynamicLinks
     - TTkGameSDK/Core
-  - TTkGameSDK/Core (1.1.1)
-  - TTkGameSDK/Facebook (1.1.1):
+  - TTkGameSDK/AppsFlyer (1.1.2):
+    - AppsFlyerFramework
+    - TTkGameSDK/Core
+  - TTkGameSDK/Core (1.1.2)
+  - TTkGameSDK/Facebook (1.1.2):
     - FBSDKCoreKit (~> 6.5.1)
     - FBSDKLoginKit (~> 6.5.1)
     - FBSDKShareKit (~> 6.5.1)
     - TTkGameSDK/Core
-  - TTkGameSDK/Twitter (1.1.1):
+  - TTkGameSDK/Tapjoy (1.1.2):
+    - TapjoySDK
+    - TTkGameSDK/Core
+  - TTkGameSDK/Twitter (1.1.2):
     - TTkGameSDK/Core
     - TwitterKit5
   - TwitterCore (3.2.0)
@@ -114,6 +124,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppsFlyerFramework
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -130,11 +141,13 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SDWebImage
+    - TapjoySDK
     - TTkGameSDK
     - TwitterCore
     - TwitterKit5
 
 SPEC CHECKSUMS:
+  AppsFlyerFramework: 15ae3f973d0248bc9d3926c2c1ae0bad70b90517
   FBSDKCoreKit: ada5c8a05188daefc9addb985c52b8a1b26da519
   FBSDKLoginKit: caa165495afa29a12324cb2307fe6e5b33783142
   FBSDKShareKit: d0538e2385480d8b2901468c80abcf22aeaf2abd
@@ -150,8 +163,9 @@ SPEC CHECKSUMS:
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
-  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
-  TTkGameSDK: b823a12b77edc499ae41c201d539d969dd6932ff
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  TapjoySDK: f44906b70c236370e426b58366de9acc87717e90
+  TTkGameSDK: e5a635e2f90574a33d843dbeacd9a36d26f3a3a1
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit5: 64095dfefcf39be2355711ef27112d55e340d90e
 

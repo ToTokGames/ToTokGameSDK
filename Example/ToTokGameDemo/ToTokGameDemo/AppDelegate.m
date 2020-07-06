@@ -29,8 +29,16 @@
     NSString *appSecret = @"d96b2c8baa2a1bf6671ad29cfd3fb566";
     NSString *gameid = @"126847495400849409";
     [[TTkGameManager defaultManager] setupWithAppId:appId Secret:appSecret GameId:gameid Application:application Options:launchOptions];
-                
+    
+    [self noti];
     return YES;
+}
+
+- (void)noti {
+    [[TTkGameManager defaultManager] accountBannedNotification:^(NSString * _Nullable information, NSString * _Nullable time) {
+        NSLog(@"--%@--",information);
+        NSLog(@"--%@--",time);
+    }];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
