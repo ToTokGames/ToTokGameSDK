@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TTGCConfig.h</key>
 		<data>
-		qbzNdGXI8F0V/TomlHDwwvGjQ18=
+		jSuPfHf7ghW0x+xRQzK8TdcNhZI=
 		</data>
 		<key>Headers/TTGCFriendModel.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		zXODb0vZ9C8AVasO8Ah876MTCnI=
+		QOOFgadPqwReHXTELCh9WI9QWD8=
 		</data>
 		<key>Headers/TTkGameManager.h</key>
 		<data>
-		3Wy2qiEvdoinwBkZZ0IT0BpiSok=
+		7CF9zaT8tFTnWNVWOzZfSh6KCmY=
 		</data>
 		<key>Headers/TTkGameSDK.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R5uX9c1tA4pGzfZ0kGOfjynqDdU=
+		okuJXSEIeTqj/auPAwDGdLG+x1M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,11 +78,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbzNdGXI8F0V/TomlHDwwvGjQ18=
+			jSuPfHf7ghW0x+xRQzK8TdcNhZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			QlUQZ+Ns2rvHtkiekiyu45XOOQnygTcf7m3yaQ8h17Y=
+			oT8o+PYqKs12YMHI6y70eqXJLfFpcBjLATMv6zUfOYw=
 			</data>
 		</dict>
 		<key>Headers/TTGCFriendModel.h</key>
@@ -166,22 +166,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zXODb0vZ9C8AVasO8Ah876MTCnI=
+			QOOFgadPqwReHXTELCh9WI9QWD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fg6sHti+0+eCaCGz5H6hbmNELc3QkP64F8G01F0BgMM=
+			V4UkNYsyR+apq3EEfbc47cJBkYthMkU1F7cv4P5kT4Y=
 			</data>
 		</dict>
 		<key>Headers/TTkGameManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Wy2qiEvdoinwBkZZ0IT0BpiSok=
+			7CF9zaT8tFTnWNVWOzZfSh6KCmY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pzk29Wktmgf+HasBEaqoXwsm1842dGorEWf30lyFWQ4=
+			+s5ePxGAF1KPD7kiWsUYvnmReaaIxdcpKQJ0mbIdpCY=
 			</data>
 		</dict>
 		<key>Headers/TTkGameSDK.h</key>

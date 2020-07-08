@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TTkGameLite"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "TTkGame SDK for games"
   
   spec.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/ToTokGames/ToTokGameSDK-iOS.git", :tag => "TTkGameLite-1.0.0" }
+  spec.source       = { :git => "https://github.com/ToTokGames/ToTokGameSDK-iOS.git", :tag => "TTkGameLite-1.0.1" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -36,6 +36,20 @@ Pod::Spec.new do |spec|
       analy.dependency 'TTkGameLite/Core'
       analy.dependency 'Firebase/Analytics'
       analy.dependency 'Firebase/DynamicLinks'
+  end
+  
+  spec.subspec 'AppsFlyer' do |af|
+      af.source_files = 'SDK/TTkGameLite/SocialLibraries/TTGCAppsFlyer'
+      af.vendored_library = 'SDK/TTkGameLite/SocialLibraries/TTGCAppsFlyer/libTTGCAppsFlyer.a'
+      af.dependency 'AppsFlyerFramework'
+      af.dependency 'TTkGameLite/Core'
+  end
+  
+  spec.subspec 'Tapjoy' do |tg|
+      tg.source_files = 'SDK/TTkGameLite/SocialLibraries/TTGCTapjoy'
+      tg.vendored_library = 'SDK/TTkGameLite/SocialLibraries/TTGCTapjoy/libTTGCTapjoy.a'
+      tg.dependency 'TapjoySDK'
+      tg.dependency 'TTkGameLite/Core'
   end
 
 end

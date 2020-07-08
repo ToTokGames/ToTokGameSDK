@@ -26,11 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)applicationDidBecomeActive:(UIApplication *)application;
 - (void)applicationWillTerminate:(UIApplication *)application;
 
-/**
- Launch Animation
- Start the default animation, use it selectively, and don't care if you implement it.
- */
-- (void)launchAnimationCompletion:(TTGCLaunchCompletion)completion;
 
 #pragma mark - Login
 
@@ -43,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
  Login User Information(Model data is only available when logged in.)
  */
 - (TTGCUserModel *)loginUserModel;
+
+/**
+ AccessToken is only available when logged in.
+ */
+- (void)getAvailableAccessToken:(TTGCUserCompletionHandler)completion;
 
 /**
  TTk Login
@@ -91,6 +91,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param handler notification information
  */
 - (void)accountKickedNotification:(TTGCAccountKickedHandler)handler;
+
+/**
+ Notification of account being banned
+ 
+ @param handler notification information
+ */
+- (void)accountBannedNotification:(TTGCAccountBannedHandler)handler;
 
 #pragma mark - Friends
 /**

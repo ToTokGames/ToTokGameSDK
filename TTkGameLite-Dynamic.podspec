@@ -36,5 +36,19 @@ Pod::Spec.new do |spec|
       analy.dependency 'Firebase/Analytics'
       analy.dependency 'Firebase/DynamicLinks'
   end
+  
+  spec.subspec 'AppsFlyer' do |af|
+      af.source_files = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCAppsFlyer'
+      af.vendored_library = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCAppsFlyer/libTTGCAppsFlyer.a'
+      af.dependency 'AppsFlyerFramework'
+      af.dependency 'TTkGameLite-Dynamic/Core'
+  end
+  
+  spec.subspec 'Tapjoy' do |tg|
+      tg.source_files = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCTapjoy'
+      tg.vendored_library = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCTapjoy/libTTGCTapjoy.a'
+      tg.dependency 'TapjoySDK'
+      tg.dependency 'TTkGameLite-Dynamic/Core'
+  end
 
 end
