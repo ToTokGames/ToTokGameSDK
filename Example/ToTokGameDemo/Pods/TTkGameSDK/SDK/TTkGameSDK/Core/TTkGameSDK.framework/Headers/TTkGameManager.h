@@ -45,6 +45,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (TTGCUserModel *)loginUserModel;
 
 /**
+ AccessToken is only available when logged in.
+ */
+- (void)getAvailableAccessToken:(TTGCUserCompletionHandler)completion;
+
+/**
  TTk Login
  
  @param completion login callback

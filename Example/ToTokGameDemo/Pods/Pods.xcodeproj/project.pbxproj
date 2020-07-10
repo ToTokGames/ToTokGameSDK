@@ -1504,6 +1504,7 @@
 		162A9D7CFE173E633885B9280F5004F4 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
 		163B020CC171AD7E184280A22FD8A6F1 /* FBSDKMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMonitor.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Monitoring/FBSDKMonitor.m; sourceTree = "<group>"; };
 		16487B152468F31148D17F95C2D9C190 /* FIRInstallationsIIDTokenStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIIDTokenStore.m; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.m; sourceTree = "<group>"; };
+		166D3425D58E616AC32B3BD8C97F03BF /* TJPrivacyPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TJPrivacyPolicy.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TJPrivacyPolicy.h; sourceTree = "<group>"; };
 		1676851E632191870AEB3D047B85F842 /* FIRInstallationsHTTPError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsHTTPError.m; path = FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.m; sourceTree = "<group>"; };
 		172307760CBF274FE99B2E98863E6F60 /* FBSDKShareKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSDKShareKit-umbrella.h"; sourceTree = "<group>"; };
 		1757AC4F4A2FE18C61CCBD95F5B5BC21 /* FIRComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponent.m; path = FirebaseCore/Sources/FIRComponent.m; sourceTree = "<group>"; };
@@ -1644,7 +1645,6 @@
 		3E6E9BE3DBD2AA102E216C9216DB5BBD /* FBSDKURLOpening.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKURLOpening.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKURLOpening.h; sourceTree = "<group>"; };
 		3ED371871BDFF7C3E74D58DE73EDEBFA /* FBSDKGameRequestDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestDialog.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.h; sourceTree = "<group>"; };
 		3F5214B9B6CBD05604A44358391D7624 /* FBSDKCrashShield.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCrashShield.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Instrument/CrashReport/FBSDKCrashShield.m; sourceTree = "<group>"; };
-		3F6C7184831769ADBF4DE751B7905B3A /* TapjoyAuctionConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyAuctionConstants.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyAuctionConstants.h; sourceTree = "<group>"; };
 		3FA5CDE9B92341034197ADEF6185BF66 /* FBSDKKeychainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStore.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.h; sourceTree = "<group>"; };
 		3FE427B2FD6C4394F071FCF96CAD8F2D /* FirebaseCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCore-umbrella.h"; sourceTree = "<group>"; };
 		3FF0E50138FB49B5029B239AAEE3E02C /* FBSDKAppGroupContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppGroupContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.m; sourceTree = "<group>"; };
@@ -1752,6 +1752,7 @@
 		581DB7D4EFB6736039587D58B70A7D1D /* FBSDKShareDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDefines.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareDefines.h; sourceTree = "<group>"; };
 		581F52137EB5A109488BD29F4DA46F48 /* FBSDKMeasurementEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMeasurementEvent.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h; sourceTree = "<group>"; };
 		584AD525686C511D8C9D376C69EC0119 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		59498B196A84D93CC790D9FA235B69AC /* TapjoySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TapjoySDK.release.xcconfig; sourceTree = "<group>"; };
 		59628185CBFD017F6AF995BBD9C0D5EA /* SDDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDisplayLink.m; path = SDWebImage/Private/SDDisplayLink.m; sourceTree = "<group>"; };
 		59735A209427671C599C98C073FDD879 /* FirebaseDynamicLinks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseDynamicLinks.h; path = FirebaseDynamicLinks/Sources/Public/FirebaseDynamicLinks.h; sourceTree = "<group>"; };
 		59A14B52D8FE00857608331C2E930CEF /* FIRInstallationsLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsLogger.m; path = FirebaseInstallations/Source/Library/FIRInstallationsLogger.m; sourceTree = "<group>"; };
@@ -1812,7 +1813,6 @@
 		6949A11A6E69512BB9EE95BA1F84F5FE /* FBSDKError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKError.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKError.h; sourceTree = "<group>"; };
 		698AD6730054160DF48E84B5616F1E9F /* FBSDKInstrumentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKInstrumentManager.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Instrument/FBSDKInstrumentManager.h; sourceTree = "<group>"; };
 		69B8E2383BB3E4D5222865D64FF8BAB0 /* FBSDKAudioResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAudioResourceLoader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h; sourceTree = "<group>"; };
-		69BB8745E00C95AA750A99F9A0879964 /* TapjoySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TapjoySDK.release.xcconfig; sourceTree = "<group>"; };
 		69EBBBC09AE582A3A123A6089D067309 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		6A085ABFD7155D0FB80EDE54D1A19789 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
 		6B07AA09E1D85B6E2500DB7F153362C8 /* FBSDKApplicationObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKApplicationObserving.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKApplicationObserving.h; sourceTree = "<group>"; };
@@ -1843,7 +1843,6 @@
 		728510A491D380CE61E72FB15F3493F1 /* FIRAnalyticsInteropListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsInteropListener.h; path = Interop/Analytics/Public/FIRAnalyticsInteropListener.h; sourceTree = "<group>"; };
 		72B63FAEC7E7E49AE7D05E9DFC1E96CE /* FBSDKDialogConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDialogConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKDialogConfiguration.h; sourceTree = "<group>"; };
 		7382C5FD5ABD63190E3DC8F263DD406C /* GDTCORUploadPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploadPackage.h; path = GoogleDataTransport/GDTCORLibrary/Public/GDTCORUploadPackage.h; sourceTree = "<group>"; };
-		73C4EB465B756907011F03B7AE93E276 /* TapjoyResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TapjoyResources.bundle; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle; sourceTree = "<group>"; };
 		74108063DF2106ECEA3B338CDB465E58 /* FBSDKDeviceLoginManagerResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKDeviceLoginManagerResult+Internal.h"; path = "FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKDeviceLoginManagerResult+Internal.h"; sourceTree = "<group>"; };
 		742E1FF6984A3957FF25FF476C11A85D /* GoogleUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.release.xcconfig; sourceTree = "<group>"; };
 		74308708D97883AFA031CFE932F99D83 /* FBSDKLikeObjectType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeObjectType.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h; sourceTree = "<group>"; };
@@ -1981,7 +1980,6 @@
 		963A6A029C990D2ECD7EB6BAA8F15F62 /* FBSDKEventBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKEventBinding.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKEventBinding.m; sourceTree = "<group>"; };
 		9848F4F2F4C6274B580EC91B640CDA77 /* FBSDKAppEventsStateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsStateManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsStateManager.m; sourceTree = "<group>"; };
 		98BFB3E6165AA4E50507B5C986ED29F5 /* FBSDKLoginKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSDKLoginKit-umbrella.h"; sourceTree = "<group>"; };
-		98C9FCCE617376BA51CB1AE356144DFB /* TJPrivacyPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TJPrivacyPolicy.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TJPrivacyPolicy.h; sourceTree = "<group>"; };
 		9915717792448D35C6B3E0B7731A497F /* FBSDKMethodUsageMonitorEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMethodUsageMonitorEntry.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Monitoring/FBSDKMethodUsageMonitorEntry.h; sourceTree = "<group>"; };
 		99751D6423EBE36797ED1FCC2888F783 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/Core/SDWebImageManager.m; sourceTree = "<group>"; };
 		999FAA5B46C15AA7764BDD245F03D57F /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
@@ -1991,7 +1989,6 @@
 		9A42072803A1D00AD8909C4E5A145D2B /* FIRConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRConfiguration.m; path = FirebaseCore/Sources/FIRConfiguration.m; sourceTree = "<group>"; };
 		9A4FBD5BA51D293D6BC94CA7E16D36CC /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		9AA071FCC06A606BB17198C607547808 /* FBSDKAppLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLink.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h; sourceTree = "<group>"; };
-		9AC3F53867AEA859924BE810888D18CB /* TapjoyCpp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyCpp.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyCpp.h; sourceTree = "<group>"; };
 		9AD15CB329DFEFEA8D7C0DE1CB6CD4E1 /* FBSDKCrashHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCrashHandler.h; path = FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/FBSDKCrashHandler.h; sourceTree = "<group>"; };
 		9B40D51547D4DB8543142DD540DB78E7 /* FBSDKBridgeAPIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPIRequest.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest.m; sourceTree = "<group>"; };
 		9B733DFB0625EEBBC0753BEB1626E04A /* FBSDKServerConfigurationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKServerConfigurationManager+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager+Internal.h"; sourceTree = "<group>"; };
@@ -2027,10 +2024,10 @@
 		A326628CB23C8AB5B6106934EC08BDC7 /* FIRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfiguration.h; path = FirebaseCore/Sources/Public/FIRConfiguration.h; sourceTree = "<group>"; };
 		A34B182EAD25D5ACA6A9696601EF46F7 /* FBSDKAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLink.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.m; sourceTree = "<group>"; };
 		A3C3217C4A894FC48FAF29E1997A59A9 /* libTTGCTapjoy.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libTTGCTapjoy.a; path = SDK/TTkGameSDK/SocialLibraries/TTGCTapjoy/libTTGCTapjoy.a; sourceTree = "<group>"; };
-		A42BEDEAF376243C5A874720E645953C /* TapjoyConnectConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyConnectConstants.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyConnectConstants.h; sourceTree = "<group>"; };
 		A43050469662BA51195044918207CFCB /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
 		A44B1E324A28D41471B60B60ABA56A36 /* FBSDKColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKColor.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKColor.m; sourceTree = "<group>"; };
 		A4706BBCC4419E0D3B9D82B79BBEBFB4 /* FIRDLJavaScriptExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDLJavaScriptExecutor.m; path = FirebaseDynamicLinks/Sources/FIRDLJavaScriptExecutor.m; sourceTree = "<group>"; };
+		A4981B4F5555E83966D73D64109007F4 /* TapjoyConnectConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyConnectConstants.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyConnectConstants.h; sourceTree = "<group>"; };
 		A4B21A283604905736BDA62CE0C20CEA /* GULKeychainStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainStorage.h; path = GoogleUtilities/Environment/Public/GULKeychainStorage.h; sourceTree = "<group>"; };
 		A4EAA5083E565D5AE4996C4684329665 /* FBSDKGraphRequestConnection+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKGraphRequestConnection+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestConnection+Internal.h"; sourceTree = "<group>"; };
 		A542793E22BE51635066397A0C7B8005 /* FirebaseInstallations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseInstallations-dummy.m"; sourceTree = "<group>"; };
@@ -2072,7 +2069,6 @@
 		AC7A43560DD9C88A1441555941790419 /* GULNetworkMessageCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkMessageCode.h; path = GoogleUtilities/Network/Private/GULNetworkMessageCode.h; sourceTree = "<group>"; };
 		AD4633554D98F4C543C0F0B6552B87B0 /* FirebaseCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseCore.modulemap; sourceTree = "<group>"; };
 		AD878A3C686CF7C83678EAF6F2586E1D /* FBSDKWebDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialogView.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialogView.h; sourceTree = "<group>"; };
-		AD9CC6BC8E9E7FE589AB54F2B7543ED6 /* TapjoySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TapjoySDK.debug.xcconfig; sourceTree = "<group>"; };
 		AE2ED74B0251D5C64270441B2235275F /* FBSDKHashtag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKHashtag.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.m; sourceTree = "<group>"; };
 		AE7DEBA03B5E61B63C41DB3021867BBF /* FBSDKErrorReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorReport.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Instrument/ErrorReport/FBSDKErrorReport.m; sourceTree = "<group>"; };
 		AF06782FD34244B0F345E42EF3FD5DFC /* GDTCORFlatFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORFlatFileStorage.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m; sourceTree = "<group>"; };
@@ -2088,7 +2084,6 @@
 		B12C30403919C7CCA453AFF23BC9185A /* GDTCORRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar.h; path = GoogleDataTransport/GDTCORLibrary/Public/GDTCORRegistrar.h; sourceTree = "<group>"; };
 		B16709675CA7983DA9A94905DC75F81F /* Pods_ToTokGameDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToTokGameDemo.framework; path = "Pods-ToTokGameDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CA2CCFAFC853F9847D48632FA4B155 /* FBSDKAccessTokenExpirer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenExpirer.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenExpirer.m; sourceTree = "<group>"; };
-		B1EC76412D0FF2490CF460AC10322673 /* TJPlacement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TJPlacement.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TJPlacement.h; sourceTree = "<group>"; };
 		B1EF06C94462BBA62558D2749FAD75B0 /* SDImageIOAnimatedCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoder.h; path = SDWebImage/Core/SDImageIOAnimatedCoder.h; sourceTree = "<group>"; };
 		B1F934AFAC68AF9F1489E9289E89FCA0 /* FBSDKApplicationDelegate+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKApplicationDelegate+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKApplicationDelegate+Internal.h"; sourceTree = "<group>"; };
 		B204072430A89C816F79AB8092AFEED6 /* FBSDKShareConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareConstants.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.h; sourceTree = "<group>"; };
@@ -2114,6 +2109,7 @@
 		B64BFA527A2866759C373E4724117F54 /* FBSDKShareKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKShareKit-dummy.m"; sourceTree = "<group>"; };
 		B6E377B355285F953A62A16D7189BA3A /* FirebaseAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseAnalytics.release.xcconfig; sourceTree = "<group>"; };
 		B746828FC20CB345930197582187480E /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
+		B7FAAC1E701AF2E1A391BC7DD663E1B0 /* TapjoyCpp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyCpp.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyCpp.h; sourceTree = "<group>"; };
 		B8054832B48FCF5814F1D5AE219114EA /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		B80835F29E931B35A2054C8CE25ECC94 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/Core/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		B8542D57A8BF1D1BD45015EA9BC9B54A /* GDTCORTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransport.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransport.m; sourceTree = "<group>"; };
@@ -2155,7 +2151,6 @@
 		C1FA3E098FE0539907217536AFE5DDC1 /* GDTCCTUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCCTUploader.m; path = GoogleDataTransportCCTSupport/GDTCCTLibrary/GDTCCTUploader.m; sourceTree = "<group>"; };
 		C2088E1D670801C97D40B858830C8258 /* FBSDKAccessTokenCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCache.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.h; sourceTree = "<group>"; };
 		C213E59F66B8DF69D142AAFA98FEEA84 /* FBSDKUserDataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKUserDataStore.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.m; sourceTree = "<group>"; };
-		C2BAC4CBF2A4B6EFF22D4C80B574E9BC /* Tapjoy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tapjoy.h; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/Tapjoy.h; sourceTree = "<group>"; };
 		C2DCBCA9A92C3DED078C6C3B7AC20058 /* FBSDKShareUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareUtility.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.m; sourceTree = "<group>"; };
 		C2F2CFC749FA75F53F0EF315174DC2D5 /* FBSDKModelParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSDKModelParser.mm; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/ML/FBSDKModelParser.mm; sourceTree = "<group>"; };
 		C305B2AD62AFC2C07A1F27500B8CCA29 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
@@ -2197,6 +2192,7 @@
 		CF8277DBFF3E8B90B60FB4670962F0B3 /* GULSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSwizzler.h; path = GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h; sourceTree = "<group>"; };
 		CF8A2A3099CF41F016B43622DA96113C /* SDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAssociatedObject.h; path = SDWebImage/Private/SDAssociatedObject.h; sourceTree = "<group>"; };
 		CF93157A9F4796A37D46FF2A7E0B3A35 /* FBSDKGraphRequestMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestMetadata.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestMetadata.h; sourceTree = "<group>"; };
+		CFD637F8A07744244EAA8508B82671BB /* TapjoySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TapjoySDK.debug.xcconfig; sourceTree = "<group>"; };
 		D01D9FA36E31D6C9A9863736FA42CB7E /* FBLPromise+Reduce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Reduce.h"; path = "Sources/FBLPromises/include/FBLPromise+Reduce.h"; sourceTree = "<group>"; };
 		D054D8B5F318525972A3DEF43D7F8CB6 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
 		D0962C68F362C3425BE11A1BA0456918 /* FIRCoreDiagnosticsInterop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreDiagnosticsInterop.h; path = Interop/CoreDiagnostics/Public/FIRCoreDiagnosticsInterop.h; sourceTree = "<group>"; };
@@ -2217,7 +2213,6 @@
 		D4F652B42D19F91A8E5A8FE358D5FDF4 /* FBSDKBridgeAPIResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPIResponse.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIResponse.m; sourceTree = "<group>"; };
 		D5400B46D072AADF2395EC64FCEDC653 /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsConfiguration.h; path = FirebaseCore/Sources/FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		D623D39316240B34D8AD828E11D1465A /* FIRInstallations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallations.h; path = FirebaseInstallations/Source/Library/Public/FIRInstallations.h; sourceTree = "<group>"; };
-		D62EEBB2C9596D9BC5AC6499F3D34EF3 /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapjoy.framework; path = TapjoySDK_iOS_v12.6.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework; sourceTree = "<group>"; };
 		D66AC1322F227E3FF92614841AA67FD2 /* FIRComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponent.h; path = FirebaseCore/Sources/Private/FIRComponent.h; sourceTree = "<group>"; };
 		D68A9095C1299324FA6A1CA0A8A23AC9 /* FBSDKDeviceLoginCodeInfo+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKDeviceLoginCodeInfo+Internal.h"; path = "FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKDeviceLoginCodeInfo+Internal.h"; sourceTree = "<group>"; };
 		D7A9B02883761F80BE304107FECED417 /* FirebaseDynamicLinks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseDynamicLinks-umbrella.h"; sourceTree = "<group>"; };
@@ -2273,6 +2268,7 @@
 		E19D48F7602585C244953C53946CBEA3 /* FIRBundleUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRBundleUtil.m; path = FirebaseCore/Sources/FIRBundleUtil.m; sourceTree = "<group>"; };
 		E1B318E7255C3695EEE23FA55C399677 /* SDWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOperation.m; path = SDWebImage/Core/SDWebImageOperation.m; sourceTree = "<group>"; };
 		E205559E9E5A4B227A67445A7FE64601 /* FIRAppAssociationRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAppAssociationRegistration.m; path = FirebaseCore/Sources/FIRAppAssociationRegistration.m; sourceTree = "<group>"; };
+		E2072BCD465C46A7B074BD963064B0E8 /* Tapjoy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tapjoy.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/Tapjoy.h; sourceTree = "<group>"; };
 		E22E2EDE04109D415F8FAEE87FB63192 /* FBSDKSharingContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h; sourceTree = "<group>"; };
 		E276651C335D955FB7B0D2AB8C0A0DB4 /* FBSDKAppEvents+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAppEvents+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEvents+Internal.h"; sourceTree = "<group>"; };
 		E2965B2BCE9BEEFCF92DB5488E365599 /* FBSDKURLSessionTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURLSessionTask.m; path = FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/FBSDKURLSessionTask.m; sourceTree = "<group>"; };
@@ -2292,6 +2288,7 @@
 		E4D899F90DF0DC69B871AAD8C3695A72 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
 		E510383ADF2F1D05821CDDB629D74892 /* FBSDKCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCrypto.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h; sourceTree = "<group>"; };
 		E547205D198ECE3A8FD617C9F42845B6 /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
+		E5BD2FC6077A6B63A4E4A30A73553532 /* TJPlacement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TJPlacement.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TJPlacement.h; sourceTree = "<group>"; };
 		E5C9FE757BDF8F3CF4747CAF919197EF /* FIRInstallationsStoredItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsStoredItem.h; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.h; sourceTree = "<group>"; };
 		E5CB2181DE3872E437E1F6282CB79F06 /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		E74FC99E45207A6C39467AD09C7961DA /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
@@ -2345,6 +2342,7 @@
 		F4E55BE56D51B081AE2E67F02426E3B9 /* FIRHeartbeatInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRHeartbeatInfo.h; path = FirebaseCore/Sources/Private/FIRHeartbeatInfo.h; sourceTree = "<group>"; };
 		F52A74414F298FD097D924ADBB2B5747 /* FBSDKLoginCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginCompletion.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.h; sourceTree = "<group>"; };
 		F54BDC084DE0FB7F87055A16969C7697 /* PromisesObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-Info.plist"; sourceTree = "<group>"; };
+		F5DFB276B2062248A4BFB4FA75A8B31B /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapjoy.framework; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework; sourceTree = "<group>"; };
 		F626DDC275430A8536BF4A009FA5DCAE /* FBSDKDeviceShareButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceShareButton.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareButton.m; sourceTree = "<group>"; };
 		F64772927626D043B5630E7AE2FE6A56 /* SDInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDInternalMacros.h; path = SDWebImage/Private/SDInternalMacros.h; sourceTree = "<group>"; };
 		F73F49334955D1EDBE6EB4A9AD79380D /* FIRInstallationsSingleOperationPromiseCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsSingleOperationPromiseCache.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsSingleOperationPromiseCache.m; sourceTree = "<group>"; };
@@ -2363,6 +2361,7 @@
 		FB2ACF6A2396775F6BE5DB951E2698E8 /* FIROptionsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptionsInternal.h; path = FirebaseCore/Sources/Private/FIROptionsInternal.h; sourceTree = "<group>"; };
 		FB31105F5BE16B41C615B5C9107B9DA8 /* FBSDKAppLinkReturnToRefererView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkReturnToRefererView_Internal.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLinkReturnToRefererView_Internal.h; sourceTree = "<group>"; };
 		FB45142BCBE36302C5C48B8FEE786066 /* FBSDKGameRequestFrictionlessRecipientCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGameRequestFrictionlessRecipientCache.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKGameRequestFrictionlessRecipientCache.m; sourceTree = "<group>"; };
+		FB4D69D42ED4555A32D5D8AAF3B64F7A /* TapjoyAuctionConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TapjoyAuctionConstants.h; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Headers/TapjoyAuctionConstants.h; sourceTree = "<group>"; };
 		FB6563DA4132B05D200ED4BB870A76FB /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
 		FB7437530041D8D9CCCCB9EC94DDA2F2 /* FBSDKSharing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharing.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h; sourceTree = "<group>"; };
 		FB7BF19636DD96A1E90D4657472077C6 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GULLoggerLevel.h; sourceTree = "<group>"; };
@@ -2372,6 +2371,7 @@
 		FBF6BEA9BD1B5EABC6C93E5D31372871 /* FBSDKErrorConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfiguration.m; sourceTree = "<group>"; };
 		FC583071E7A90E9F4454DCBD259D348B /* GULAppEnvironmentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppEnvironmentUtil.m; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m; sourceTree = "<group>"; };
 		FC696A8C4C0794FE40EAAD5B118A1CE5 /* FBSDKShareVideoContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareVideoContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.m; sourceTree = "<group>"; };
+		FCF05F0CABB1A60153665B1CC736B810 /* TapjoyResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TapjoyResources.bundle; path = TapjoySDK_iOS_v12.6.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle; sourceTree = "<group>"; };
 		FD0E60FA06AF38145AE4CF682E8C8290 /* FIRComponentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponentType.m; path = FirebaseCore/Sources/FIRComponentType.m; sourceTree = "<group>"; };
 		FD290A7FCACBEDF916B954AF5926FC08 /* SDWebImageIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageIndicator.m; path = SDWebImage/Core/SDWebImageIndicator.m; sourceTree = "<group>"; };
 		FD71BE9E6D47BC1E78937642B71FF8D5 /* FBSDKModelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKModelManager.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/ML/FBSDKModelManager.h; sourceTree = "<group>"; };
@@ -2740,16 +2740,6 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
-		4080F3DF5EE898FFA74492B3C33CED32 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD9CC6BC8E9E7FE589AB54F2B7543ED6 /* TapjoySDK.debug.xcconfig */,
-				69BB8745E00C95AA750A99F9A0879964 /* TapjoySDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TapjoySDK";
-			sourceTree = "<group>";
-		};
 		4264BB5E881242415B0F640EFC513869 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2876,7 +2866,7 @@
 				369C233085311790EE92987F485E74AE /* nanopb */,
 				3889A65FCED0750D7033B7455DF50AAF /* PromisesObjC */,
 				5C96B4DABC09092764AAAB2727F0C708 /* SDWebImage */,
-				A0091E6E8C1994B1E5963BAB02851559 /* TapjoySDK */,
+				C91897AD2D6BA7D8C96EDF41A414B041 /* TapjoySDK */,
 				AAD3E1F9F7DDBB9E5354FA43BEAED48C /* TTkGameSDK */,
 				DD442194A17ED77CA2D70E5FC7DCD31B /* TwitterCore */,
 				1369FC5B7848950E3846CFAD7DEF80BC /* TwitterKit5 */,
@@ -3109,6 +3099,14 @@
 			path = FirebaseCoreDiagnostics;
 			sourceTree = "<group>";
 		};
+		8E637B8F5FDDE92D738A1A2BA6C0181A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5DFB276B2062248A4BFB4FA75A8B31B /* Tapjoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		933388FBA15409DA5004CC36E4744D42 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3121,6 +3119,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GoogleDataTransportCCTSupport";
+			sourceTree = "<group>";
+		};
+		936A1B71ED37223A51CEA9D0679C21D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCF05F0CABB1A60153665B1CC736B810 /* TapjoyResources.bundle */,
+				FCF05F0CABB1A60153665B1CC736B810 /* TapjoyResources.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		9623468C5A4B1FF6AD1E18583457873F /* Frameworks */ = {
@@ -3149,23 +3156,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TwitterKit5";
-			sourceTree = "<group>";
-		};
-		A0091E6E8C1994B1E5963BAB02851559 /* TapjoySDK */ = {
-			isa = PBXGroup;
-			children = (
-				C2BAC4CBF2A4B6EFF22D4C80B574E9BC /* Tapjoy.h */,
-				3F6C7184831769ADBF4DE751B7905B3A /* TapjoyAuctionConstants.h */,
-				A42BEDEAF376243C5A874720E645953C /* TapjoyConnectConstants.h */,
-				9AC3F53867AEA859924BE810888D18CB /* TapjoyCpp.h */,
-				B1EC76412D0FF2490CF460AC10322673 /* TJPlacement.h */,
-				98C9FCCE617376BA51CB1AE356144DFB /* TJPrivacyPolicy.h */,
-				BB7A4100F5521817DF59FDC52A3EFAD5 /* Frameworks */,
-				F06F20FDADFA017C9539977502F92A28 /* Resources */,
-				4080F3DF5EE898FFA74492B3C33CED32 /* Support Files */,
-			);
-			name = TapjoySDK;
-			path = TapjoySDK;
 			sourceTree = "<group>";
 		};
 		A088B76F1A91DA0E4B639F94AEFD976F /* Support Files */ = {
@@ -3313,14 +3303,6 @@
 			path = "../Target Support Files/GoogleAppMeasurement";
 			sourceTree = "<group>";
 		};
-		BB7A4100F5521817DF59FDC52A3EFAD5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D62EEBB2C9596D9BC5AC6499F3D34EF3 /* Tapjoy.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BE726AC52CA104CDF095115608E020CB /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -3442,6 +3424,16 @@
 				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C67CFA773701A4BCBB106440AE8A4927 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFD637F8A07744244EAA8508B82671BB /* TapjoySDK.debug.xcconfig */,
+				59498B196A84D93CC790D9FA235B69AC /* TapjoySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TapjoySDK";
 			sourceTree = "<group>";
 		};
 		C7EB3026A2427FD631D26573AA75FD94 /* Core */ = {
@@ -3703,6 +3695,23 @@
 				B2093FE99A2E8AB054B6052FDF6C39BA /* Resources */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		C91897AD2D6BA7D8C96EDF41A414B041 /* TapjoySDK */ = {
+			isa = PBXGroup;
+			children = (
+				E2072BCD465C46A7B074BD963064B0E8 /* Tapjoy.h */,
+				FB4D69D42ED4555A32D5D8AAF3B64F7A /* TapjoyAuctionConstants.h */,
+				A4981B4F5555E83966D73D64109007F4 /* TapjoyConnectConstants.h */,
+				B7FAAC1E701AF2E1A391BC7DD663E1B0 /* TapjoyCpp.h */,
+				E5BD2FC6077A6B63A4E4A30A73553532 /* TJPlacement.h */,
+				166D3425D58E616AC32B3BD8C97F03BF /* TJPrivacyPolicy.h */,
+				8E637B8F5FDDE92D738A1A2BA6C0181A /* Frameworks */,
+				936A1B71ED37223A51CEA9D0679C21D5 /* Resources */,
+				C67CFA773701A4BCBB106440AE8A4927 /* Support Files */,
+			);
+			name = TapjoySDK;
+			path = TapjoySDK;
 			sourceTree = "<group>";
 		};
 		C99B9E06FA62F8D52EBD18EDACDA566D /* Login */ = {
@@ -4097,15 +4106,6 @@
 				2FB1A41254744F2B519D8F35591F871A /* libTTGCSocialTwitter.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F06F20FDADFA017C9539977502F92A28 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				73C4EB465B756907011F03B7AE93E276 /* TapjoyResources.bundle */,
-				73C4EB465B756907011F03B7AE93E276 /* TapjoyResources.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		F531230D52DDB54F1BEDDDC887F3CFBD /* FirebaseInstallations */ = {
@@ -7063,7 +7063,7 @@
 		};
 		BAE996552F5586BA8DBE1C5553D94F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD9CC6BC8E9E7FE589AB54F2B7543ED6 /* TapjoySDK.debug.xcconfig */;
+			baseConfigurationReference = CFD637F8A07744244EAA8508B82671BB /* TapjoySDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -7129,7 +7129,7 @@
 		};
 		CA47A25EF07DA38CD3F5BF93988D0337 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69BB8745E00C95AA750A99F9A0879964 /* TapjoySDK.release.xcconfig */;
+			baseConfigurationReference = 59498B196A84D93CC790D9FA235B69AC /* TapjoySDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

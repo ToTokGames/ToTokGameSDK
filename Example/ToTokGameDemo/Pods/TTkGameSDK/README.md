@@ -21,11 +21,11 @@ ToTokGameSDK is available through [CocoaPods](https://cocoapods.org).
 ```objc
 pod 'TTkGameSDK'
 ```
-Doucument : [ToTokGameSDK Installation (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/ToTokGameSDK%20Installation%20(iOS).pdf)
+Doucument : [ToTokGameSDK Installation (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK/ToTokGameSDK%20Installation%20(iOS).pdf)
 
 **Api**
 
-Doucument : [ToTokGameSDK API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/ToTokGameSDK%20API%20Document%20(iOS).pdf)
+Doucument : [ToTokGameSDK API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK/ToTokGameSDK%20API%20Document%20(iOS).pdf)
 
 
 # TTkGameLite & TTkGameLite-Dynamic
