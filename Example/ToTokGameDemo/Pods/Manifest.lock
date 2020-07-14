@@ -88,30 +88,30 @@ PODS:
     - SDWebImage/Core (= 5.8.3)
   - SDWebImage/Core (5.8.3)
   - TapjoySDK (12.6.1)
-  - TTkGameSDK (1.1.3):
-    - TTkGameSDK/Analytics (= 1.1.3)
-    - TTkGameSDK/AppsFlyer (= 1.1.3)
-    - TTkGameSDK/Core (= 1.1.3)
-    - TTkGameSDK/Facebook (= 1.1.3)
-    - TTkGameSDK/Tapjoy (= 1.1.3)
-    - TTkGameSDK/Twitter (= 1.1.3)
-  - TTkGameSDK/Analytics (1.1.3):
+  - TTkGameSDK (1.1.4):
+    - TTkGameSDK/Analytics (= 1.1.4)
+    - TTkGameSDK/AppsFlyer (= 1.1.4)
+    - TTkGameSDK/Core (= 1.1.4)
+    - TTkGameSDK/Facebook (= 1.1.4)
+    - TTkGameSDK/Tapjoy (= 1.1.4)
+    - TTkGameSDK/Twitter (= 1.1.4)
+  - TTkGameSDK/Analytics (1.1.4):
     - Firebase/Analytics
     - Firebase/DynamicLinks
     - TTkGameSDK/Core
-  - TTkGameSDK/AppsFlyer (1.1.3):
+  - TTkGameSDK/AppsFlyer (1.1.4):
     - AppsFlyerFramework
     - TTkGameSDK/Core
-  - TTkGameSDK/Core (1.1.3)
-  - TTkGameSDK/Facebook (1.1.3):
+  - TTkGameSDK/Core (1.1.4)
+  - TTkGameSDK/Facebook (1.1.4):
     - FBSDKCoreKit (~> 6.5.1)
     - FBSDKLoginKit (~> 6.5.1)
     - FBSDKShareKit (~> 6.5.1)
     - TTkGameSDK/Core
-  - TTkGameSDK/Tapjoy (1.1.3):
+  - TTkGameSDK/Tapjoy (1.1.4):
     - TapjoySDK
     - TTkGameSDK/Core
-  - TTkGameSDK/Twitter (1.1.3):
+  - TTkGameSDK/Twitter (1.1.4):
     - TTkGameSDK/Core
     - TwitterKit5
   - TwitterCore (3.2.0)
@@ -165,7 +165,7 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
   TapjoySDK: ab02725a55e84c2fdd6fafc872cb00bd58e8adb2
-  TTkGameSDK: 5d8222cc4a66b7e0cd16d1375b48a56e02d549c5
+  TTkGameSDK: c66a2e1908beb13a7c41c678b46b1205709d1a46
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit5: 64095dfefcf39be2355711ef27112d55e340d90e
 
