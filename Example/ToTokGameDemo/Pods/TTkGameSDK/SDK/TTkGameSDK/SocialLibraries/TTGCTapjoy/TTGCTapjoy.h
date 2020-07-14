@@ -6,6 +6,7 @@
 //  Copyright © 2020 GMCT. All rights reserved.
 //
 
+//#import <Foundation/Foundation.h>
 #import <TTkGameSDK/TTkGameSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
