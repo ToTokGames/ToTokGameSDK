@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TTGCUserModel.h</key>
 		<data>
-		9VXf0DsB6qGK0flZOADWG7RnAxk=
+		vD6Hop5OW7mYp6398MfNeIitkUg=
 		</data>
 		<key>Headers/TTkGameManager.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZnyIIKUOe1PiWWonnAyO1yYEof4=
+		wKRGvXMuDp04IsqcmheHCtULHmo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VXf0DsB6qGK0flZOADWG7RnAxk=
+			vD6Hop5OW7mYp6398MfNeIitkUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			w3r6xm0AKrPOR4G/iLjpEHtwp5AA8FUVdCGkS7AOyqc=
+			kXITXFkjtLlx3hxD8YmjrOOyuPw4KqRuEeyakvF0tYo=
 			</data>
 		</dict>
 		<key>Headers/TTkGameManager.h</key>
