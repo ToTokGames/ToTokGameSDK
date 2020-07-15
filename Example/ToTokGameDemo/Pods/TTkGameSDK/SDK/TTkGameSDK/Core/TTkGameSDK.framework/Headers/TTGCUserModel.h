@@ -27,11 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) TTGCLoginType userType; //user type
 @property (nonatomic, copy) NSString *userId; //TTkGame userid
+@property (nonatomic, copy) NSString *thirdUid; //third-party uid
 @property (nonatomic, copy) NSString *accessToken; //TTkGame authorization token
 @property (nonatomic, copy) NSString *nickname; //nick name
 @property (nonatomic, copy) NSString *photoUrl; //photo
 @property (nonatomic, copy) NSString *pushOff;
-
 
 @end
 
