@@ -19,4 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TTGCBotimPlayingFriendModel : NSObject
+
+@property (nonatomic, copy) NSString *userId; //ttk game userid
+@property (nonatomic, copy) NSString *bimUid; //
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *photoUrl;
+
+@end
+
 NS_ASSUME_NONNULL_END

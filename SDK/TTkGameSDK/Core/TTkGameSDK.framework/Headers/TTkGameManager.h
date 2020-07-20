@@ -223,6 +223,14 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Pay
 
 /**
+ Product
+ 
+ @param sku goods ID
+ @param completion product detail completion callback
+ */
+- (void)getProductDetailWithSKU:(NSString *)sku Completion:(TTGCProductCompletionHandler)completion;
+
+/**
  Purchase
  
  @param sku goods ID

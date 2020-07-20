@@ -21,6 +21,8 @@
     
     // set SDK Api Enviroment
     [[TTkGameManager defaultManager] setServerDomainTest];
+    [[TTkGameManager defaultManager] setPayEnvironmentTest];
+    
     // open log
     [[TTkGameManager defaultManager] openLogInfo];
     
