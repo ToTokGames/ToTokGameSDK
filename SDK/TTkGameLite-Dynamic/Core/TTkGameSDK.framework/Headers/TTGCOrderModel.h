@@ -30,4 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TTGCProductModel : NSObject
+
+@property (nonatomic, copy) NSString *sku; //The string that identifies the product to the Apple App Store.
+@property (nonatomic, copy) NSString *price; //The cost of the product in the local currency.
+@property (nonatomic, copy) NSString *localeCurrency; //The currency code associated with the locale.
+@property (nonatomic, copy) NSString *localizedTitle; //The name of the product.
+@property (nonatomic, copy) NSString *localizedDescription; //A description of the product.
+
+@end
+
 NS_ASSUME_NONNULL_END

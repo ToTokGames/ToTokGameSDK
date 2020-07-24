@@ -156,6 +156,14 @@ typedef void (^TTGCOrderProgressHandler)(TTGCOderStatus orderStatus);
 typedef void (^TTGCOrderCompletionHandler)(id _Nullable orderInfo, NSError *_Nullable error);
 
 /**
+ *  Product detail callback
+ *
+ *  @param productInfo product detail information
+ *  @param error error message
+ */
+typedef void (^TTGCProductCompletionHandler)(id _Nullable productInfo, NSError *_Nullable error);
+
+/**
  *  Get version info callback
  *
  *  @param hasNewVersion has new version
