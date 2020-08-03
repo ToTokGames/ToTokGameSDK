@@ -220,5 +220,15 @@ If specified, the quote text will render with custom styling on top of the link.
 
 @end
 
+// botim card message model
+@interface TTGCSocialBimMessage : NSObject
+
+@property (nonatomic, copy) NSString *bimUid;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *contentString;
+@property (nonatomic, copy) NSString *imageUrl;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

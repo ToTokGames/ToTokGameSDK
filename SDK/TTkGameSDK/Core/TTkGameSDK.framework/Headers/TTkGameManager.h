@@ -57,6 +57,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)loginWithTTkCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
+ Botim Login
+ 
+ @param completion login callback
+ */
+- (void)loginWithBotimCompletion:(TTGCUserCompletionHandler)completion;
+
+/**
+ Botim is install
+*/
+- (BOOL)botimIsInstall;
+
+/**
  Apple Login
  
  @param completion login callback
@@ -158,6 +170,14 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void)sendToMessageTottk:(id)message Completion:(TTGCShareCompleteHandler)completion;
 
+/**
+*  botim share
+*
+*  @param message  share content type @see TTGCSocialBimMessage
+*  @param completion   callback
+*/
+- (void)sendToMessageToBotim:(id)message Completion:(TTGCShareCompleteHandler)completion;
+
 
 #pragma mark - Push Notification
 
@@ -218,6 +238,22 @@ NS_ASSUME_NONNULL_BEGIN
  @param completion friends list callback
  */
 - (void)getPlayingFriendsFromServerCompletion:(TTGCTTkFriendsCompletionHandler)completion;
+
+#pragma mark - Botim
+
+/**
+ Get botim friends list from server
+ 
+ @param completion friends list callback
+ */
+- (void)getFriendsFromBotimCompletion:(TTGCBimFriendsCompletionHandler)completion;
+
+/**
+ Get botim playing friends list from server
+ 
+ @param completion friends list callback
+ */
+- (void)getPlayingFriendsFromBotimCompletion:(TTGCBimFriendsCompletionHandler)completion;
 
 
 #pragma mark - Pay
