@@ -18,4 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TTGCBotimFriendModel : NSObject
+
+@property (nonatomic, copy) NSString *bimUid; //botim uid
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *photoUrl;
+
+@end
+
 NS_ASSUME_NONNULL_END

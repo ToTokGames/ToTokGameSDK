@@ -1,6 +1,5 @@
 //
 //  TTGCAppsFlyer.h
-//  ToTokGameDemo
 //
 //  Created by Balalaika on 2020/7/2.
 //  Copyright © 2020 GMCT. All rights reserved.

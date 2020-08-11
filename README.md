@@ -32,8 +32,8 @@ Doucument : [ToTokGameSDK API Document (iOS).pdf](https://github.com/ToTokGames/
 
 **Function**
 
-- [x] Login （ToTok & Third-Party & Guest）
-- [x] Social （ToTok Friends & ToTok Share）
+- [x] Login （Third-Party & Guest）
+- [x] Social （Friends & Share）
 - [x] In-App Purchase
 - [x] Push Notifications
 - [x] Universal Link & Analytics （Firebase）
@@ -70,4 +70,4 @@ Doucument : [TTkGameSDK-Lite Installation (iOS).pdf](https://github.com/ToTokGam
 
 **Api**
 
-Doucument : [TTkGameSDK-Lite API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK-Lite/TTkGameSDK-Lite%20API%20Document%20(iOS).pdf)
+Doucument : [TTkGameSDK-Lite API Document (iOS).pdf](https://github.com/ToTokGames/ToTokGameSDK-iOS/blob/master/Documents/TTkGameSDK-Lite/TTkGameSDK-Lite%20API%20Document%20(iOS).pdf

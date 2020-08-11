@@ -125,6 +125,14 @@ typedef void (^TTGCAccountBannedHandler)(NSString *_Nullable information, NSStri
 typedef void (^TTGCTTkFriendsCompletionHandler)(NSArray *_Nullable list, NSError *_Nullable error);
 
 /**
+ *  Botim Friends list callback
+ *
+ *  @param list <NSArray>
+ *  @param error error message
+ */
+typedef void (^TTGCBimFriendsCompletionHandler)(id _Nullable list, NSError *_Nullable error);
+
+/**
  *  Share callback
  *
  *  @param success <BOOL>

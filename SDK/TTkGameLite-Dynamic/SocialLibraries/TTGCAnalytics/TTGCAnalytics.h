@@ -1,6 +1,5 @@
 //
 //  TTGCAnalytics.h
-//  ToTokGameDemo
 //
 //  Created by Balalaika on 2020/4/8.
 //  Copyright © 2020 GMCT. All rights reserved.

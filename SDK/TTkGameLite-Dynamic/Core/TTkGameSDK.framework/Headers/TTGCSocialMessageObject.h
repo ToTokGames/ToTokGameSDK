@@ -19,7 +19,9 @@ typedef NS_ENUM(NSInteger, TTGCSocialPlateType) {
     //The following content is not open yet
     TTGCSocialPlate_Messenger      = 3,             // Messenger
     TTGCSocialPlate_TTkApp         = 4,             // TTkApp
-    TTGCSocialPlate_TTkApi         = 5              // TTkApi
+    TTGCSocialPlate_TTkApi         = 5,             // TTkApi
+    TTGCSocialPlate_BimApp         = 6,             // BimApp
+    TTGCSocialPlate_BimApi         = 7              // BimApi
 };
 
 /**
@@ -195,6 +197,16 @@ If specified, the quote text will render with custom styling on top of the link.
 @property (nonatomic, copy) NSString *ttkUid;
 @property (nonatomic, copy) NSString *contentString;
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *imageUrl;
+
+@end
+
+// botim card message model
+@interface TTGCSocialBimMessage : NSObject
+
+@property (nonatomic, copy) NSString *bimUid;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *contentString;
 @property (nonatomic, copy) NSString *imageUrl;
 
 @end
